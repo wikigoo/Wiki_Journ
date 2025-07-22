@@ -1,1684 +1,720 @@
-# **The Complete Guide to Professional Text-to-Image Prompting**
+# **Professional Text-to-Image Prompt System for Iranian News Agency**
 
-## _A Practical Manual for Journalists and Content Creators_
+## **Table of Contents**
+1. [System Architecture and Core Principles](#system-architecture)
+2. [Platform Configuration Guide](#platform-configuration)
+3. [Content Category Templates](#content-templates)
+4. [Visual Style Frameworks](#visual-styles)
+5. [Cultural Sensitivity and Compliance](#compliance)
+6. [Quality Assurance and Optimization](#quality-assurance)
+7. [Implementation Workflow](#implementation)
 
 ---
 
-## **PART I: FOUNDATIONS**
+## **1. System Architecture and Core Principles** {#system-architecture}
 
-### **Chapter 1: Understanding AI Image Generation**
+### **Universal Prompt Formula**
 
-#### 1.1 How AI Interprets Your Words
+Every effective prompt follows this hierarchical structure:
 
-When you type a prompt into an AI image generator, you're not communicating with an intelligent entity that "understands" your intent. Instead, you're providing coordinates in a vast mathematical space where the AI has learned to associate certain word patterns with visual outcomes.
-
-**The Statistical Nature of AI Understanding:**
-
-AI models like DALL-E 3, Midjourney, and Stable Diffusion are trained on billions of image-text pairs scraped from the internet. When you write "a confident politician," the AI doesn't understand "confidence" as an emotion. Instead, it statistically correlates that phrase with images tagged similarly in its training data - typically showing people with upright posture, direct eye contact, and formal attire.
-
-**Why This Matters for Journalists:**
-
-Understanding this statistical foundation is crucial because it explains why:
-
-- Specific terms yield better results than abstract concepts
-- Cultural biases appear in outputs (Western defaults for "politician" or "journalist")
-- Certain combinations of words create unexpected visual results
-- Consistency requires identical or very similar phrasing
-
-**Practical Application:**
-
-Instead of writing: "A successful leader addressing the nation" Write: "A middle-aged political leader in formal dark suit standing at wooden podium with national flag background, confident upright posture, direct eye contact with camera, professional studio lighting"
-
-#### 1.2 The Generation Process Explained
-
-**From Words to Numbers (Text Encoding):**
-
-Your prompt undergoes several transformations:
-
-1. **Tokenization**: Words are broken into smaller units
-2. **Embedding**: Each token becomes a numerical vector
-3. **Conditioning**: These vectors guide the image generation process
-
-**The Diffusion Process:**
-
-Modern AI image generators use a process called diffusion:
-
-1. **Start with noise**: A field of random static pixels
-2. **Iterative refinement**: The AI gradually removes noise over 20-50 steps
-3. **Text guidance**: Your prompt's numerical representation guides each step
-4. **Final decode**: The result is converted back to visible pixels
-
-**Seeds and Reproducibility:**
-
-Every generation starts with a "seed" - a number that determines the initial noise pattern. Using the same seed with identical prompts produces identical images, making this crucial for:
-
-- Creating variations of the same concept
-- Maintaining consistency across a series
-- Reproducing successful results
-
-**Platform Differences:**
-
-- **DALL-E 3**: Optimized for natural language, integrated with ChatGPT for conversational refinement
-- **Midjourney**: Emphasizes artistic quality, uses Discord interface with parameter system
-- **Stable Diffusion**: Open-source, maximum customization, steep learning curve
-
-#### 1.3 Common Limitations and Expectations
-
-**Anatomical Accuracy Challenges:**
-
-AI struggles with:
-
-- **Hands and fingers**: Often produces wrong number of digits or unnatural poses
-- **Facial symmetry**: Eyes may be uneven, teeth distorted
-- **Complex poses**: Multiple people interacting, unusual positions
-
-**Solutions for Journalists:**
-
-- Use negative prompts: "ugly, deformed hands, extra fingers, asymmetrical eyes"
-- Specify: "detailed hands, symmetrical face, natural pose"
-- Choose simpler compositions when accuracy is critical
-
-**Text Rendering Capabilities:**
-
-Most AI models cannot reliably render readable text except DALL-E 3. For news graphics requiring text:
-
-- **DALL-E 3**: Can create headlines, banners, simple graphics with text
-- **Others**: Generate image, add text in post-production
-- **Workaround**: Describe text placement, add actual text later
-
-**Cultural Bias in Training Data:**
-
-AI models reflect biases in their training data:
-
-- "Politician" often defaults to older white men
-- "Journalist" may show Western stereotypes
-- Middle Eastern representations may rely on outdated or stereotypical imagery
-
-**Mitigation Strategies:**
-
-- Be explicit about demographics: "Iranian female journalist in hijab"
-- Specify cultural context: "Persian architectural background"
-- Use diverse reference descriptors
-
-**Managing Realistic Expectations:**
-
-AI excels at:
-
-- Creating variations quickly
-- Generating concepts for brainstorming
-- Producing high-quality single subjects
-- Mixing styles and concepts creatively
-
-AI struggles with:
-
-- Perfect accuracy in complex scenes
-- Specific real people (ethically restricted)
-- Precise historical accuracy
-- Fine text details
-
-### **Chapter 2: The Universal Prompt Formula**
-
-#### 2.1 The Three-Layer Structure
-
-Every effective prompt follows a hierarchical structure that mirrors how AI processes information:
-
-**Layer 1: Subject & Scene (WHO + WHAT + WHERE)**
-
-This foundation layer establishes the core content. Place this first because AI gives highest weight to initial words.
-
-_Components:_
-
-- **Primary Subject**: The main focus (person, object, concept)
-- **Action/State**: What the subject is doing or how they appear
-- **Environment**: Where the scene takes place
-- **Context**: Time period, situation, atmosphere
-
-_Example:_ "Iranian foreign minister in formal diplomatic attire sitting at negotiation table in modern conference room"
-
-**Layer 2: Style & Medium (HOW IT LOOKS)**
-
-This layer defines the aesthetic approach and visual treatment.
-
-_Components:_
-
-- **Medium**: Photography, painting, digital art, sketch
-- **Artistic style**: Photorealistic, documentary, editorial, artistic
-- **Historical reference**: Art movements, photographer styles
-- **Mood**: Professional, dramatic, intimate, authoritative
-
-_Example:_ "professional diplomatic photography style, documentary realism, natural conference room lighting"
-
-**Layer 3: Technical Quality (PROFESSIONAL STANDARDS)**
-
-This final layer ensures professional output quality.
-
-_Components:_
-
-- **Resolution**: 8K, UHD, high detail
-- **Camera specs**: Lens type, shot composition
-- **Quality boosters**: Professional, award-winning, masterpiece
-- **Technical details**: Sharp focus, proper exposure
-
-_Example:_ "shot with 85mm lens, shallow depth of field, professional photography, 8K detail, sharp focus"
-
-**Complete Formula Example:** "Iranian foreign minister in formal diplomatic attire sitting at negotiation table in modern conference room, professional diplomatic photography style, documentary realism, natural conference room lighting, shot with 85mm lens, shallow depth of field, professional photography, 8K detail, sharp focus"
-
-#### 2.2 Prompt Order and Weight
-
-**Why Sequence Matters:**
-
-AI attention mechanisms assign decreasing importance to words as they appear later in prompts. Critical elements should appear early.
-
-**Optimal Order:**
-
-1. **Primary subject** (first 3-5 words)
-2. **Key descriptors** (next 10-15 words)
-3. **Setting and context** (middle section)
-4. **Style and mood** (latter portion)
-5. **Technical specifications** (end)
-
-**Weight Distribution Examples:**
-
-_High Impact Opening:_ "Presidential candidate during televised debate..."
-
-_Medium Impact Middle:_ "...standing at podium in television studio with blue backdrop..."
-
-_Low Impact Ending:_ "...professional broadcast lighting, 8K, shot with professional camera"
-
-**Balancing Specificity with Flexibility:**
-
-Too specific: "45-year-old Iranian politician with exactly three wrinkles wearing navy blue suit with red tie standing at brown wooden podium"
-
-Too vague: "A person talking"
-
-Optimal: "Middle-aged Iranian political leader in formal attire addressing audience from parliamentary podium"
-
-### **Chapter 3: Platform Overview and Selection**
-
-#### 3.1 DALL-E 3: Conversational and Safe
-
-**Core Strengths:**
-
-- **Natural language processing**: Understands complex, conversational prompts
-- **Text integration**: Only platform reliable for readable text in images
-- **Safety filters**: Appropriate for public figures and sensitive content
-- **ChatGPT integration**: Iterative refinement through conversation
-
-**Best Applications for Journalism:**
-
-- News graphics with headlines or text
-- Public figure representations (with restrictions)
-- Infographic-style content
-- Social media graphics requiring text
-
-**Practical Workflow:**
-
-1. Start with conversational prompt in ChatGPT
-2. Request specific changes through dialogue
-3. Refine until result meets requirements
-4. Export final image
-
-**Example Workflow:**
-
-```
-User: "Create a news graphic showing economic growth in Iran"
-ChatGPT: [Generates initial image]
-User: "Make the chart more prominent and add Persian text"
-ChatGPT: [Refines image with adjustments]
-User: "Change the color scheme to match our brand colors"
-ChatGPT: [Final version with brand alignment]
-```
-
-**Limitations:**
-
-- Less artistic control than competitors
-- Safety restrictions may block legitimate news content
-- Cannot generate specific real people
-- Limited parameter customization
-
-#### 3.2 Midjourney: Artistic and Cinematic
-
-**Core Strengths:**
-
-- **Visual aesthetics**: Produces consistently beautiful, cinematic results
-- **Consistency tools**: --cref and --sref for character and style matching
-- **Parameter control**: Fine-tuning through command-line style parameters
-- **Community**: Large user base sharing techniques and styles
-
-**Key Parameters for Journalists:**
-
-**Aspect Ratio (--ar):**
-
-- `--ar 16:9`: Widescreen for video thumbnails, web headers
-- `--ar 9:16`: Vertical for mobile, Instagram stories
-- `--ar 1:1`: Square for social media posts
-- `--ar 3:2`: Standard photography ratio
-
-**Stylize (--stylize or --s):**
-
-- `--s 0`: Maximum prompt adherence, minimal artistic interpretation
-- `--s 50`: Balanced approach, good for journalism
-- `--s 100`: Default Midjourney aesthetic
-- `--s 250+`: Highly artistic, less literal
-
-**Character Reference (--cref):**
-
-```
-/imagine [prompt] --cref [image_URL] --cw 80
-```
-
-- Maintains character consistency across multiple images
-- --cw controls strength (0-100)
-
-**Style Reference (--sref):**
-
-```
-/imagine [prompt] --sref [image_URL] --sw 50
-```
-
-- Applies visual style from reference image
-- --sw controls style strength (0-1000)
-
-**Practical Journalism Workflow:**
-
-1. Generate initial concept with basic prompt
-2. Use --cref for character consistency in multi-image stories
-3. Apply --sref for brand-consistent styling
-4. Adjust --stylize for appropriate realism level
-
-**Example for Political Coverage:**
-
-```
-/imagine Iranian parliament session with legislators in formal debate, documentary photography style, natural lighting --ar 16:9 --s 25 --q 2
-```
-
-#### 3.3 Stable Diffusion: Technical and Customizable
-
-**Core Strengths:**
-
-- **Maximum control**: Detailed parameter adjustment
-- **Custom models**: Specialized checkpoints for specific needs
-- **Negative prompts**: Precise exclusion control
-- **Open source**: Community innovations and modifications
-
-**Essential Parameters:**
-
-**CFG Scale (Classifier-Free Guidance):**
-
-- 1-6: High creativity, loose prompt adherence
-- 7-12: Balanced approach (recommended for journalism)
-- 13-20: Strict adherence, may cause artifacts
-
-**Sampling Steps:**
-
-- 20-30: Fast generation, good quality
-- 30-50: Higher quality, slower
-- 50+: Diminishing returns
-
-**Negative Prompts:** Essential for quality control:
-
-```
-Negative: ugly, deformed, disfigured, poorly drawn hands, extra fingers, mutated hands, poorly drawn face, bad anatomy, blurry, low quality, worst quality, jpeg artifacts, watermark, signature, text, amateur, distorted
-```
-
-**Advanced Techniques:**
-
-**Prompt Weighting:**
-
-- `(important concept:1.3)`: Increase emphasis
-- `[less important:0.8]`: Decrease emphasis
-- `((very important:1.5))`: Strong emphasis
-
-**Custom Models for Journalism:**
-
-- **Realistic Vision**: Excellent for photorealism
-- **Deliberate**: Balanced realism and artistry
-- **epiCRealism**: Professional photography style
-
-**Practical Workflow:**
-
-1. Choose appropriate checkpoint model
-2. Craft detailed positive prompt
-3. Include comprehensive negative prompt
-4. Set CFG scale 7-9 for journalism
-5. Use 25-35 sampling steps
-6. Generate multiple variations
-7. Upscale best results
-
----
-
-## **PART II: VISUAL MASTERY**
-
-### **Chapter 4: Lighting and Atmosphere Control**
-
-#### 4.1 Professional Lighting Techniques
-
-**Portrait Lighting for News Figures:**
-
-**Three-Point Lighting Setup:** The foundation of professional photography, easily replicated in AI prompts:
-
-```
-"Professional three-point lighting setup with key light from 45-degree angle, soft fill light reducing shadows, and subtle back light for separation"
-```
-
-**Rembrandt Lighting:** Creates dramatic, authoritative mood perfect for serious political coverage:
-
-```
-"Rembrandt lighting with strong key light creating characteristic triangle of light on shadowed cheek, dramatic shadows, professional portrait style"
-```
-
-**Butterfly Lighting:** Flattering for formal portraits and official imagery:
-
-```
-"Butterfly lighting with high front key light creating small shadow under nose, even facial illumination, formal portrait style"
-```
-
-**Natural vs. Studio Lighting:**
-
-_For Documentary Realism:_
-
-```
-"Natural window lighting, soft diffused daylight, candid documentary style, authentic atmosphere"
-```
-
-_For Official Portraits:_
-
-```
-"Professional studio lighting, controlled illumination, softbox lighting, formal presentation, executive portrait style"
-```
-
-**Atmospheric Lighting Applications:**
-
-**Golden Hour for Emotional Impact:**
-
-```
-"Golden hour lighting casting warm amber glow, long soft shadows, emotional warmth, inspiring atmosphere"
-```
-
-**Blue Hour for Serious Topics:**
-
-```
-"Blue hour twilight lighting, cool professional tones, serious atmosphere, contemplative mood"
-```
-
-**Dramatic News Coverage:**
-
-```
-"Harsh directional lighting, strong contrast shadows, dramatic atmosphere, breaking news urgency"
-```
-
-#### 4.2 Cultural Context Lighting
-
-**Appropriate Lighting for Iranian Cultural Content:**
-
-**Religious and Ceremonial Settings:**
-
-```
-"Respectful soft lighting appropriate for mosque interior, warm traditional ambiance, cultural sensitivity, reverent atmosphere"
-```
-
-**Government and Official Settings:**
-
-```
-"Formal governmental lighting, official parliamentary ambiance, dignified professional illumination, institutional gravitas"
-```
-
-**Traditional vs. Modern Balance:**
-
-```
-"Balanced lighting showing modern Iranian progress while respecting traditional values, contemporary yet culturally appropriate"
-```
-
-**Regional and Seasonal Considerations:**
-
-**Desert and Arid Region Lighting:**
-
-```
-"Bright clear desert lighting, intense sunlight balanced with strategic shadows, Middle Eastern atmospheric clarity"
-```
-
-**Urban Persian Architecture:**
-
-```
-"Architectural lighting emphasizing traditional Persian design elements, respectful cultural presentation, historical significance"
-```
-
-#### 4.3 Technical Lighting Specifications
-
-**Color Temperature Control:**
-
-**Warm Light (2700K-3200K):** Applications: Intimate interviews, cultural events, emotional stories
-
-```
-"Warm tungsten lighting, cozy amber glow, intimate atmosphere, emotional warmth"
-```
-
-**Neutral Daylight (5000K-5600K):** Applications: News reporting, official events, factual coverage
-
-```
-"Neutral daylight balance, accurate color reproduction, professional news lighting, clear visibility"
-```
-
-**Cool Light (6000K-7000K):** Applications: Technology stories, modern settings, corporate coverage
-
-```
-"Cool professional lighting, modern corporate atmosphere, clean contemporary feel, technological precision"
-```
-
-**Directional Lighting for Different Moods:**
-
-**Authoritative and Powerful:**
-
-```
-"Low-angle dramatic lighting, upward shadows, powerful authoritative presence, leadership gravitas"
-```
-
-**Approachable and Trustworthy:**
-
-```
-"Gentle front lighting, minimal shadows, approachable demeanor, trustworthy presentation"
-```
-
-**Serious and Contemplative:**
-
-```
-"Side lighting with controlled shadows, thoughtful atmosphere, serious consideration, depth of character"
-```
-
-### **Chapter 5: Composition and Camera Control**
-
-#### 5.1 News Photography Composition
-
-**Shot Types for Different Journalism Scenarios:**
-
-**Wide Establishing Shots:** Perfect for showing context, crowd sizes, environmental impact:
-
-```
-"Wide establishing shot showing full context of protest gathering in city square, environmental storytelling, documentary perspective, comprehensive scene coverage"
-```
-
-**Medium Shots for Interviews:** Balances subject and environment, standard for news interviews:
-
-```
-"Medium shot framing subject from waist up, professional interview composition, balanced subject and background, standard journalism framing"
-```
-
-**Close-ups for Emotional Impact:** Emphasizes facial expressions and emotional content:
-
-```
-"Close-up portrait focusing on facial expression, emotional storytelling, intimate connection with viewer, detailed human interest"
-```
-
-**Overhead Views for Data Visualization:** Excellent for showing patterns, crowd sizes, or geographic context:
-
-```
-"Overhead drone perspective showing scale and organization of event, bird's eye view for comprehensive coverage, geographic context"
-```
-
-**Camera Angles and Their Psychological Impact:**
-
-**Eye-Level for Neutral Reporting:** Most common for unbiased news presentation:
-
-```
-"Eye-level perspective maintaining neutral journalistic stance, unbiased viewpoint, standard news photography angle"
-```
-
-**Low Angles for Authority:** Makes subjects appear more powerful and authoritative:
-
-```
-"Low-angle shot emphasizing authority and leadership, powerful perspective, commanding presence"
-```
-
-**High Angles for Context:** Shows vulnerability or provides broader perspective:
-
-```
-"High-angle perspective providing broader context, comprehensive view of situation, environmental overview"
-```
-
-#### 5.2 Professional Framing Techniques
-
-**Rule of Thirds Implementation:**
-
-**For Single Subjects:**
-
-```
-"Composition following rule of thirds with subject positioned on right vertical line, balanced visual weight, professional photography standards"
-```
-
-**For Environmental Storytelling:**
-
-```
-"Rule of thirds composition with horizon on lower third line, subject on left intersection point, environmental context in upper two-thirds"
-```
-
-**Leading Lines for Visual Flow:**
-
-**Architectural Leading Lines:**
-
-```
-"Leading lines from architectural elements drawing eye to main subject, directional visual flow, structured composition"
-```
-
-**Natural Leading Lines:**
-
-```
-"Natural leading lines from pathway/river/shoreline guiding viewer attention to focal point, organic visual progression"
-```
-
-**Depth of Field for Focus Control:**
-
-**Shallow Depth for Subject Isolation:**
-
-```
-"Shallow depth of field with subject in sharp focus, background softly blurred, professional portrait technique, subject isolation"
-```
-
-**Deep Depth for Environmental Context:**
-
-```
-"Deep depth of field keeping entire scene in sharp focus, comprehensive environmental detail, landscape photography style"
-```
-
-#### 5.3 Aspect Ratio Optimization
-
-**16:9 for Digital Media:** Standard for web headers, video thumbnails, presentation slides:
-
-```
-"Widescreen 16:9 composition optimized for digital display, horizontal format maximizing screen real estate"
-```
-
-**9:16 for Mobile and Social:** Vertical format for Instagram stories, mobile viewing:
-
-```
-"Vertical 9:16 composition optimized for mobile viewing, portrait orientation for social media platforms"
-```
-
-**1:1 for Social Media Posts:** Square format for Instagram feeds, balanced composition:
-
-```
-"Square 1:1 composition with centered subject, balanced visual weight for social media posting"
-```
-
-**Custom Ratios for Print:** Traditional newspaper and magazine formats:
-
-```
-"3:2 aspect ratio for traditional print media, classic photography proportions, editorial layout compatibility"
-```
-
-### **Chapter 6: Style and Cultural Adaptation**
-
-#### 6.1 Photorealistic News Style
-
-**Documentary Realism Approach:**
-
-The foundation of credible journalism imagery:
-
-```
-"Documentary photography style, natural lighting, candid authentic moment, journalistic integrity, real-world authenticity, unposed natural behavior"
-```
-
-**Key Characteristics:**
-
-- Natural, available lighting
-- Authentic, unposed moments
-- Environmental storytelling
-- Minimal artistic manipulation
-- Focus on factual representation
-
-**Applications:**
-
-- Breaking news coverage
-- On-location reporting
-- Social issue documentation
-- Political event coverage
-
-**Editorial Photography Style:**
-
-For feature stories and magazine-style content:
-
-```
-"Editorial photography style, controlled professional lighting, carefully composed but natural-looking, high production value, magazine quality"
-```
-
-**Key Characteristics:**
-
-- Controlled but natural lighting
-- Carefully planned composition
-- Higher production value
-- Polished but authentic feel
-- Suitable for covers and features
-
-**Applications:**
-
-- Political profiles
-- Economic analysis features
-- Cultural coverage
-- In-depth investigations
-
-#### 6.2 Cultural Sensitivity in Style
-
-**Iranian Context Considerations:**
-
-**Appropriate Dress Codes:**
-
-```
-"Respectful representation following Iranian cultural dress standards, modest professional attire, culturally appropriate presentation"
-```
-
-**Religious and Cultural Symbols:**
-
-```
-"Respectful inclusion of Islamic cultural elements, appropriate religious symbolism, cultural sensitivity in representation"
-```
-
-**Traditional vs. Modern Balance:**
-
-```
-"Contemporary Iranian context while honoring traditional values, modern progress with cultural respect, balanced representation"
-```
-
-**International Figure Representation:**
-
-**Avoiding Stereotypes:**
-
-```
-"Neutral diplomatic representation avoiding cultural stereotypes, respectful international coverage, unbiased visual presentation"
-```
-
-**Cross-Cultural Sensitivity:**
-
-```
-"Culturally aware international representation, diplomatic neutrality, respectful cross-cultural coverage"
-```
-
-#### 6.3 Genre-Specific Styles
-
-**Political Reporting Aesthetics:**
-
-**Parliamentary Coverage:**
-
-```
-"Formal parliamentary photography style, institutional dignity, governmental gravitas, official proceedings documentation"
-```
-
-**Campaign Coverage:**
-
-```
-"Dynamic campaign photography, energetic political atmosphere, public engagement, democratic process documentation"
-```
-
-**Diplomatic Events:**
-
-```
-"Formal diplomatic photography, international protocol appropriate, ceremonial dignity, state event documentation"
-```
-
-**Economic and Business Coverage:**
-
-**Corporate Settings:**
-
-```
-"Professional business photography, corporate environment, executive presentation, economic authority"
-```
-
-**Market and Trade Coverage:**
-
-```
-"Commercial photography documenting economic activity, trade and commerce, market dynamics, business operations"
-```
-
-**Cultural Event Coverage:**
-
-**Traditional Celebrations:**
-
-```
-"Cultural event photography respecting traditional celebrations, festive atmosphere, community gathering, cultural heritage"
-```
-
-**Arts and Literature:**
-
-```
-"Cultural arts photography, intellectual atmosphere, creative community, artistic achievement documentation"
-```
-
----
-
-## **PART III: TECHNICAL EXCELLENCE**
-
-### **Chapter 7: Quality Enhancement and Detail Control**
-
-#### 7.1 Professional Quality Boosters
-
-**Resolution and Detail Keywords:**
-
-Essential for professional output:
-
-```
-"8K UHD, ultra-high resolution, hyperdetailed, sharp focus, professional photography, award-winning quality, masterpiece, maximum detail"
-```
-
-**Camera Equipment References:**
-
-These technical specifications signal professional quality:
-
-```
-"Shot on Canon EOS R5 with 85mm f/1.4 lens, professional DSLR photography, high-end camera equipment, commercial photography standards"
-```
-
-**Alternative Equipment References:**
-
-- "Shot on Hasselblad medium format"
-- "Leica M-series photography"
-- "Sony A7R IV professional setup"
-- "Nikon D850 with professional glass"
-
-**Professional Photography Terminology:**
-
-Industry-standard language that improves output quality:
-
-```
-"Professional photography, editorial quality, commercial photography standards, studio photography, professional lighting setup"
-```
-
-**Surface and Material Specifications:**
-
-**Fabric and Clothing Details:**
-
-```
-"High-quality wool suit with fine weave texture, silk tie with subtle sheen, polished leather shoes, professional tailoring details"
-```
-
-**Architectural Materials:**
-
-```
-"Polished marble surfaces, brushed steel fixtures, natural wood grain, premium construction materials"
-```
-
-**Skin and Human Details:**
-
-```
-"Natural skin texture, detailed facial features, authentic aging, individual character details, realistic human representation"
-```
-
-#### 7.2 Negative Prompting for Quality Control
-
-**Universal Quality Filter:**
-
-Essential negative prompt for all professional work:
-
-```
-Negative: ugly, deformed, disfigured, poorly drawn hands, extra fingers, mutated hands, poorly drawn face, bad anatomy, bad proportions, extra limbs, cloned face, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, blurry, low quality, worst quality, jpeg artifacts, watermark, signature, text, amateur, distorted, asymmetrical eyes
-```
-
-**Platform-Specific Applications:**
-
-**Stable Diffusion Comprehensive Negative:**
-
-```
-Negative: ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, bad anatomy, watermark, signature, cut off, low contrast, underexposed, overexposed, bad art, beginner, amateur, distorted face, blurry, draft, grainy
-```
-
-**Midjourney No Parameter:**
-
-```
---no ugly, deformed, blurry, amateur, low quality, watermark
-```
-
-**Style Exclusion Techniques:**
-
-**For Photorealism:**
-
-```
-Negative: painting, illustration, drawing, art, sketch, cartoon, anime, cgi, 3d, rendered
-```
-
-**For Serious News Content:**
-
-```
-Negative: cartoon, comic, funny, humorous, exaggerated, caricature, satirical
-```
-
-#### 7.3 Advanced Parameter Control
-
-**Stable Diffusion CFG Scale Optimization:**
-
-**For Journalism (Recommended: 7-9):**
-
-- CFG 7: Slight creative interpretation, natural results
-- CFG 8: Balanced adherence and quality
-- CFG 9: Strong prompt following, detailed results
-
-**Sampling Methods for News:**
-
-- **DPM++ 2M Karras**: Fast, high quality, good for deadlines
-- **Euler A**: Reliable, consistent results
-- **DDIM**: Predictable, good for batch generation
-
-**Midjourney Parameter Combinations:**
-
-**For News Photography:**
-
-```
---stylize 25 --chaos 10 --quality 2
-```
-
-**For Editorial Features:**
-
-```
---stylize 50 --chaos 20 --quality 2
-```
-
-**For Breaking News (Speed Priority):**
-
-```
---stylize 15 --chaos 5 --quality 1 --fast
-```
-
-### **Chapter 8: Consistency and Character Control**
-
-#### 8.1 Political Figure Consistency
-
-**Character Description Templates:**
-
-**Template for Government Officials:**
-
-```
-[Age] Iranian [position] with [hair description], wearing [attire description], [facial features], [expression], in [setting], [lighting], [style specifications]
-```
-
-**Example Application:**
-
-```
-"Middle-aged Iranian foreign minister with graying hair and beard, wearing dark formal diplomatic suit, dignified facial features with kind eyes, confident professional expression, in modern conference room, natural professional lighting, documentary photography style, 8K detail"
-```
-
-**Consistency Maintenance Techniques:**
-
-**Seed Locking Method:**
-
-1. Generate initial character with detailed prompt
-2. Note the seed number
-3. Use identical seed for variations
-4. Modify only action/setting words
-5. Maintain core character description
-
-**Reference Image Method (Midjourney):**
-
-```
-/imagine [new scenario] --cref [original_image_URL] --cw 80
-```
-
-**Character Weight Settings:**
-
-- --cw 100: Complete character match
-- --cw 80: Strong character similarity (recommended)
-- --cw 60: Moderate character influence
-- --cw 40: Loose character reference
-
-#### 8.2 Environmental and Setting Consistency
-
-**Government Building Templates:**
-
-**Parliamentary Setting:**
-
-```
-"Iranian parliament chamber with curved seating arrangement, formal wooden panels, national emblems, official governmental atmosphere, formal institutional lighting"
-```
-
-**Diplomatic Meeting Room:**
-
-```
-"Modern diplomatic conference room with long polished table, formal chairs, international flags, professional meeting atmosphere, neutral diplomatic setting"
-```
-
-**Press Conference Setup:**
-
-```
-"Official press conference setting with podium, microphones, media backdrop, professional lighting, governmental press room atmosphere"
-```
-
-**Maintaining Visual Continuity:**
-
-**Style Reference Method (Midjourney):**
-
-```
-/imagine [new content] --sref [setting_reference_URL] --sw 60
-```
-
-**Template Substitution:**
-
-1. Create master environmental description
-2. Save as template with variables
-3. Substitute only subject/action elements
-4. Maintain environmental constants
-
-### **Chapter 9: Advanced Parameter Control**
-
-#### 9.1 Platform-Specific Optimization
-
-**Midjourney Advanced Workflows:**
-
-**News Photography Preset:**
-
-```
-/imagine [prompt] --ar 16:9 --stylize 25 --chaos 15 --quality 2 --version 6
-```
-
-**Editorial Feature Preset:**
-
 ```
-/imagine [prompt] --ar 3:2 --stylize 40 --chaos 25 --quality 2 --version 6
+[STYLE DECLARATION] + [SUBJECT/SCENE] + [COMPOSITION] + [LIGHTING] + [TECHNICAL SPECS] + [CULTURAL CONTEXT]
 ```
-
-**Social Media Preset:**
-
-```
-/imagine [prompt] --ar 1:1 --stylize 35 --chaos 20 --quality 2 --version 6
-```
-
-**Stable Diffusion News Optimization:**
-
-**Standard News Generation:**
-
-```
-Steps: 30
-CFG Scale: 8
-Sampler: DPM++ 2M Karras
-Resolution: 1024x1024 (then upscale)
-Clip Skip: 1
-```
-
-**Batch News Production:**
-
-```
-Steps: 25 (faster)
-CFG Scale: 7
-Sampler: Euler A
-Batch Count: 4
-```
-
-#### 9.2 Batch Production and Scaling
-
-**Template-Based Workflows:**
-
-**Master Template Structure:**
-
-```
-[SUBJECT_VAR] + [CONSISTENT_STYLE] + [CONSISTENT_QUALITY] + [CONSISTENT_TECHNICAL]
-```
-
-**Example Implementation:**
-
-```
-Template: "{subject} in formal diplomatic setting, professional photography, natural lighting, 8K detail, sharp focus"
-
-Variables:
-- Iranian foreign minister
-- Economic advisor  
-- Parliamentary speaker
-- Cultural attaché
-```
-
-**Quality Control at Scale:**
-
-**Three-Stage Review Process:**
-
-1. **Rapid Triage** (30 seconds per image)
-    
-    - Obvious technical failures
-    - Anatomical deformities
-    - Completely off-prompt results
-2. **Content Review** (2 minutes per image)
-    
-    - Cultural appropriateness
-    - Professional standards
-    - Brand alignment
-3. **Final Polish** (5 minutes per image)
-    
-    - Minor detail corrections
-    - Color/contrast adjustments
-    - Format optimization
-
----
-
-## **PART IV: PROFESSIONAL APPLICATION**
-
-### **Chapter 10: Journalism-Specific Workflows**
-
-#### 10.1 Breaking News Visual Creation
-
-**Rapid Response Protocol:**
-
-**Time-Critical Situation (Under 30 minutes):**
-
-1. **Platform Selection**: DALL-E 3 for speed and safety
-2. **Template Activation**: Use pre-written prompt templates
-3. **Single Generation**: Accept first good result
-4. **Minimal Post-Processing**: Basic cropping and format conversion
-
-**30-Minute Breaking News Template:**
-
-```
-"Breaking news scene showing [situation] in [location], professional news photography, dramatic lighting, journalistic documentary style, urgent atmosphere, 8K quality"
-```
-
-**Examples:**
-
-```
-"Breaking news scene showing emergency response at government building in Tehran, professional news photography, dramatic lighting, journalistic documentary style, urgent atmosphere, 8K quality"
-
-"Breaking news scene showing diplomatic meeting between international leaders, professional news photography, formal lighting, journalistic documentary style, serious atmosphere, 8K quality"
-```
-
-**2-Hour Response Protocol:**
-
-1. **Platform**: Midjourney for higher quality
-2. **Multiple Generations**: Create 3-4 options
-3. **Client Review**: Quick approval process
-4. **Basic Enhancement**: Color correction, minor edits
-
-**Same-Day Response Protocol:**
-
-1. **Platform**: Stable Diffusion for maximum control
-2. **Comprehensive Generation**: Multiple angles and approaches
-3. **Full Enhancement**: Complete post-processing workflow
-4. **Multiple Formats**: Various sizes and orientations
-
-#### 10.2 Feature Story Development
-
-**Multi-Image Story Sequences:**
-
-**Character Consistency Across Series:**
-
-**Step 1: Establish Master Character**
-
-```
-"Distinguished Iranian economist in formal business attire, middle-aged with graying beard, intelligent expression, professional demeanor, detailed character study, 8K portrait"
-```
-
-**Step 2: Generate Seed Image** Save seed number and character description
-
-**Step 3: Create Situation Variations**
-
-```
-Same character description + ", presenting economic data to parliament"
-Same character description + ", reviewing documents in office"  
-Same character description + ", meeting with international delegates"
-```
-
-**Environmental Storytelling Sequence:**
-
-**Economic Growth Story Example:**
-
-1. **Wide establishing shot**: Modern Tehran skyline
-2. **Medium shot**: Busy financial district
-3. **Close-up**: Market activity details
-4. **Portrait**: Economic expert analysis
-
-**Narrative Arc Development:**
-
-**Three-Act Visual Structure:**
-
-- **Setup**: Establish context and characters
-- **Development**: Show action and change
-- **Resolution**: Conclude with outcome/impact
-
-#### 10.3 Social and Political Coverage
-
-**Sensitive Topic Visualization:**
-
-**Protest and Demonstration Coverage:**
-
-**Balanced Perspective Approach:**
-
-```
-"Peaceful demonstration in public square, diverse crowd of citizens, respectful documentation, democratic expression, balanced journalistic perspective, natural lighting, documentary photography"
-```
-
-**Multiple Viewpoint Generation:**
-
-1. Wide crowd shots for scale
-2. Individual participant portraits
-3. Official response documentation
-4. Environmental impact views
-
-**International Relations Coverage:**
-
-**Diplomatic Meeting Visualization:**
-
-```
-"Formal diplomatic meeting between Iranian and international representatives, respectful bilateral discussion, professional conference setting, neutral diplomatic photography, balanced representation"
-```
-
-**Cultural Sensitivity Protocols:**
-
-**Pre-Generation Checklist:**
-
-- [ ] Culturally appropriate attire
-- [ ] Respectful religious considerations
-- [ ] Accurate geographic context
-- [ ] Balanced demographic representation
-- [ ] Professional diplomatic tone
-
-**Post-Generation Review:**
-
-- [ ] No cultural stereotypes present
-- [ ] Respectful representation of all parties
-- [ ] Accurate cultural details
-- [ ] Professional news standards met
-
-### **Chapter 11: Post-Generation Enhancement**
-
-#### 11.1 AI-Powered Editing Tools
-
-**Inpainting for Correction:**
-
-**Common Correction Scenarios:**
-
-**Hand Repair Workflow:**
-
-1. Identify problematic hands/fingers
-2. Mask affected area
-3. Use inpainting prompt: "natural human hands, correct anatomy, five fingers, realistic pose"
-4. Generate multiple options
-5. Select best result
-
-**Facial Enhancement:**
-
-1. Mask facial area requiring correction
-2. Inpainting prompt: "symmetrical professional face, natural expression, detailed features"
-3. Maintain lighting consistency
-4. Preserve character identity
-
-**Background Replacement:**
-
-1. Mask entire background
-2. New background prompt: "professional office setting, natural lighting, blurred background"
-3. Ensure lighting matches subject
-4. Maintain depth of field consistency
-
-**Upscaling for Print Quality:**
-
-**AI Upscaling Workflow:**
-
-1. **Real-ESRGAN**: General purpose, good for photographs
-2. **ESRGAN**: Sharp details, good for architecture
-3. **SwinIR**: Balanced approach, good for faces
-4. **Waifu2x**: Illustrations and graphics
-
-**Print Requirements:**
-
-- **Web**: 72-96 DPI, sRGB color space
-- **Newspaper**: 200-300 DPI, CMYK color space
-- **Magazine**: 300+ DPI, CMYK or sRGB
-- **Large Format**: 150-200 DPI minimum
-
-#### 11.2 Integration with Traditional Tools
-
-**Adobe Photoshop Workflow:**
-
-**Professional Enhancement Process:**
-
-1. **Import AI-generated image**
-2. **Color correction**: Levels, curves, color balance
-3. **Sharpening**: Unsharp mask or smart sharpen
-4. **Noise reduction**: Reduce grain and artifacts
-5. **Format optimization**: Save for intended use
-
-**Text and Graphics Overlay:**
-
-**News Graphics Workflow:**
-
-1. Generate background image with AI
-2. Add headline text in Photoshop
-3. Include news ticker or logo
-4. Add data visualization if needed
-5. Export in multiple formats
-
-**Batch Processing for Deadlines:**
-
-**Photoshop Actions for Efficiency:**
-
-1. Create standard correction action
-2. Include color grading for brand consistency
-3. Add watermark/logo placement
-4. Size and format optimization
-5. Apply to multiple images simultaneously
-
-### **Chapter 12: Quality Assurance and Ethics**
-
-#### 12.1 Technical Quality Control
-
-**Professional Standards Checklist:**
-
-**Before Publication Review:**
-
-- [ ] Resolution meets publication requirements
-- [ ] No visible AI artifacts (wrong fingers, distorted faces)
-- [ ] Color accuracy and consistency
-- [ ] Proper aspect ratio for intended use
-- [ ] Sharp focus where intended
-- [ ] Professional lighting quality
-- [ ] Cultural appropriateness verified
-- [ ] Brand guidelines compliance
-
-**Resolution Verification:**
-
-- **Digital**: Minimum 1920x1080 for web headers
-- **Print**: 300 DPI at final print size
-- **Social Media**: Platform-specific requirements
-- **Archive**: Maximum available resolution
-
-**Color Management:**
-
-- **Monitor calibration**: Regular color accuracy checks
-- **Color space**: sRGB for web, CMYK for print
-- **Brand consistency**: Match established color guidelines
-- **Cultural sensitivity**: Appropriate color choices
-
-#### 12.2 Ethical and Legal Considerations
-
-**Copyright and Usage Rights:**
-
-**Platform-Specific Terms:**
-
-**DALL-E 3/OpenAI:**
-
-- User owns generated images
-- Cannot generate copyrighted characters
-- Commercial use permitted with subscription
-- No liability for copyright claims
-
-**Midjourney:**
-
-- Paid subscribers own generated images
-- Free users have limited rights
-- Commercial use permitted for subscribers
-- User assumes copyright liability
-
-**Stable Diffusion:**
-
-- Open source, user owns outputs
-- Model training data copyright unclear
-- User assumes all liability
-- Commercial use varies by hosting platform
-
-**Risk Mitigation Strategies:**
-
-1. **Significant human modification**: Substantial editing and transformation
-2. **Original concept development**: Use AI as inspiration, not final product
-3. **Multiple source combination**: Blend elements from various generations
-4. **Legal consultation**: For high-stakes commercial use
-
-**Cultural and Social Responsibility:**
-
-**Bias Detection Protocol:**
-
-1. **Demographic review**: Verify diverse representation
-2. **Stereotype check**: Avoid cultural clichés
-3. **Context appropriateness**: Ensure culturally sensitive settings
-4. **Community feedback**: Test with cultural consultants
-
-**Ethical Guidelines for News:**
-
-- **Truthfulness**: Visual content supports factual reporting
-- **Transparency**: Disclose AI generation when relevant
-- **Respect**: Dignified representation of all subjects
-- **Accuracy**: Visual elements align with story facts
-
----
-
-## **PART V: PRACTICAL RESOURCES**
-
-### **Chapter 13: Template Library and Examples**
-
-#### 13.1 Government and Political Templates
-
-**Parliamentary Session Coverage:**
-
-```
-Template: "Iranian parliamentary session with legislators in formal debate, {specific_action}, professional governmental photography, formal institutional lighting, documentary journalism style, respectful political coverage, 8K detail, 16:9 aspect ratio"
-
-Variables:
-- voting on important legislation
-- discussing economic policy
-- addressing national security
-- debating social reforms
-```
-
-**Presidential/Official Portraits:**
-
-```
-Template: "Formal portrait of {position} in {setting}, dignified professional appearance, {attire}, confident leadership expression, official governmental photography, studio lighting, executive portrait style, 8K detail"
-
-Variables:
-Position: President, Minister, Ambassador, Speaker
-Setting: presidential office, ministerial chamber, diplomatic venue
-Attire: formal suit, traditional dress, diplomatic attire
-```
-
-**International Diplomacy:**
-
-```
-Template: "Diplomatic meeting between Iranian and {country} representatives, formal bilateral discussion, professional conference setting, {meeting_type}, balanced diplomatic photography, neutral perspective, 8K detail"
-
-Variables:
-Country: European Union, United Nations, neighboring countries
-Meeting_type: trade negotiations, peace talks, cultural exchange
-```
-
-#### 13.2 Economic and Business Templates
-
-**Market and Commerce:**
-
-```
-Template: "Iranian {market_type} showing {activity}, professional business photography, economic development theme, {atmosphere}, documentary business style, 8K detail"
-
-Variables:
-Market_type: stock exchange, bazaar, shopping district, industrial zone
-Activity: trading activity, consumer shopping, industrial production
-Atmosphere: bustling activity, steady growth, confident commerce
-```
-
-**Infrastructure and Development:**
-
-```
-Template: "Modern Iranian {infrastructure_type} demonstrating {development_aspect}, professional architectural photography, {lighting_time}, progress and modernization theme, 8K detail"
-
-Variables:
-Infrastructure_type: transportation hub, technology center, energy facility
-Development_aspect: technological advancement, economic growth, sustainability
-Lighting_time: golden hour, blue hour, bright daylight
-```
-
-#### 13.3 Cultural and Social Templates
-
-**Cultural Events:**
-
-```
-Template: "Iranian {cultural_event} celebration, {participant_description}, traditional cultural photography, {atmosphere}, respectful cultural documentation, natural lighting, 8K detail"
-
-Variables:
-Cultural_event: Nowruz, poetry reading, art exhibition, music performance
-Participant_description: diverse community gathering, family celebration, youth participation
-Atmosphere: joyful celebration, solemn ceremony, artistic appreciation
-```
-
-**Educational and Academic:**
-
-```
-Template: "Iranian {educational_setting} with {participants}, academic atmosphere, {activity}, professional educational photography, inspirational learning environment, natural lighting, 8K detail"
-
-Variables:
-Educational_setting: university lecture hall, research laboratory, library, school classroom
-Participants: students and professor, researchers, diverse learners
-Activity: engaged learning, scientific research, academic discussion
-```
-
-### **Chapter 14: Troubleshooting and Problem-Solving**
-
-#### 14.1 Common Technical Issues
-
-**Poor Quality Outputs:**
-
-**Problem**: Blurry, low-detail images **Solutions**:
-
-1. Add quality boosters: "8K, UHD, sharp focus, professional photography"
-2. Include camera specifications: "shot on professional DSLR"
-3. Reduce CFG scale if too high (Stable Diffusion)
-4. Use negative prompts: "blurry, low quality, amateur"
-
-**Problem**: Anatomical deformities **Solutions**:
-
-1. Comprehensive negative prompts for anatomy issues
-2. Simplify poses and interactions
-3. Use reference images when available
-4. Generate multiple options and select best
-
-**Problem**: Inconsistent style across images **Solutions**:
-
-1. Use style reference images (--sref in Midjourney)
-2. Maintain identical style descriptions
-3. Lock seeds for similar compositions
-4. Create detailed style templates
-
-#### 14.2 Cultural and Content Challenges
-
-**Problem**: Culturally inappropriate representations **Solutions**:
-
-1. Include specific cultural context in prompts
-2. Research appropriate dress codes and settings
-3. Consult with cultural experts
-4. Use positive examples as references
-
-**Problem**: Stereotypical or biased outputs **Solutions**:
-
-1. Be explicit about desired diversity
-2. Use specific demographic descriptors
-3. Include cultural authenticity keywords
-4. Generate multiple options to avoid defaults
-
-**Problem**: Achieving specific Iranian context **Solutions**:
-
-1. Research and include accurate cultural details
-2. Specify Persian architectural elements
-3. Include appropriate clothing and settings
-4. Use geographical and historical references
-
-#### 14.3 Workflow Optimization
-
-**Managing Tight Deadlines:**
-
-**30-Minute Workflow:**
-
-1. Use DALL-E 3 for speed and reliability
-2. Employ pre-tested prompt templates
-3. Accept first professional-quality result
-4. Minimal post-processing
-
-**2-Hour Workflow:**
-
-1. Use Midjourney for better quality
-2. Generate 3-4 options quickly
-3. Quick client review and selection
-4. Basic enhancement and formatting
-
-**Same-Day Workflow:**
-
-1. Use Stable Diffusion for maximum control
-2. Multiple generation rounds with refinement
-3. Comprehensive post-processing
-4. Multiple format deliverables
-
-**Client Communication Strategies:**
-
-**Setting Expectations:**
-
-- Explain AI capabilities and limitations
-- Show example quality levels
-- Discuss revision possibilities
-- Clarify usage rights and restrictions
-
-**Managing Revisions:**
-
-- Use consistent prompting for modifications
-- Leverage seed locking for variations
-- Employ inpainting for specific changes
-- Document successful prompt patterns
-
-### **Chapter 15: Future-Proofing and Continuous Learning**
-
-#### 15.1 Staying Current with AI Development
-
-**Platform Updates and New Features:**
-
-**Monitoring Strategy:**
-
-- Follow official platform announcements
-- Join professional AI communities
-- Subscribe to industry newsletters
-- Participate in beta testing programs
-
-**Key Areas to Watch:**
-
-- New parameter releases
-- Model capability improvements
-- Safety and ethical feature updates
-- Integration tool developments
-
-**Adapting to Changes:**
-
-- Test new features with existing workflows
-- Update template libraries regularly
-- Retrain team on new capabilities
-- Maintain backup workflows for transitions
-
-#### 15.2 Building Professional Expertise
-
-**Skill Development Pathway:**
-
-**Foundation Level (Months 1-3):**
-
-- Master basic prompt construction
-- Learn platform-specific parameters
-- Develop quality assessment skills
-- Build template library
-
-**Intermediate Level (Months 4-9):**
-
-- Advanced consistency techniques
-- Custom workflow development
-- Integration with traditional tools
-- Cultural adaptation mastery
-
-**Advanced Level (Months 10+):**
-
-- Custom model training (Stable Diffusion)
-- Advanced batch production
-- Team training and leadership
-- Innovation and technique development
-
-**Professional Community Engagement:**
-
-- Join journalism and AI professional groups
-- Share techniques and learn from peers
-- Contribute to best practice development
-- Stay informed on legal and ethical issues
-
-**Continuous Improvement Process:**
-
-1. **Weekly**: Review new techniques and tools
-2. **Monthly**: Assess workflow efficiency
-3. **Quarterly**: Update templates and standards
-4. **Annually**: Comprehensive skill assessment and planning
-
----
-
-## **APPENDICES**
-
-### **Appendix A: Quick Reference Guides**
-
-#### Essential Keyword Glossary
-
-**Quality Boosters:**
-
-- 8K, UHD, hyperdetailed, sharp focus, professional photography, award-winning, masterpiece, high resolution, ultra-realistic, photorealistic
-
-**Lighting Terms:**
-
-- Golden hour, blue hour, studio lighting, natural lighting, three-point lighting, Rembrandt lighting, butterfly lighting, soft light, hard light, dramatic lighting
-
-**Camera Specifications:**
-
-- 85mm lens, 50mm lens, macro lens, wide-angle, telephoto, shallow depth of field, deep depth of field, bokeh, shot on Canon, shot on Sony
-
-**Composition Terms:**
-
-- Rule of thirds, leading lines, symmetrical composition, wide shot, medium shot, close-up, low angle, high angle, eye level, overhead view
-
-**Style Descriptors:**
-
-- Documentary photography, editorial photography, professional portrait, journalistic style, news photography, commercial photography
-
-#### Platform Parameter Quick Reference
-
-**Midjourney:**
-
-- `--ar 16:9` (widescreen), `--ar 1:1` (square), `--ar 9:16` (vertical)
-- `--stylize 25` (realistic), `--stylize 100` (default), `--stylize 250` (artistic)
-- `--chaos 10` (slight variation), `--chaos 25` (moderate), `--chaos 50` (high)
-- `--quality 2` (high quality), `--quality 1` (standard)
-- `--cref [URL]` (character reference), `--sref [URL]` (style reference)
-
-**Stable Diffusion:**
-
-- CFG Scale: 7-9 (recommended for journalism)
-- Steps: 25-35 (balance of quality and speed)
-- Sampler: DPM++ 2M Karras (reliable), Euler A (fast)
-- Prompt weighting: `(keyword:1.3)` increase, `(keyword:0.8)` decrease
-
-### **Appendix B: Cultural Sensitivity Checklist**
-
-#### Pre-Generation Review
-
-**Iranian Cultural Context:**
-
-- [ ] Appropriate dress codes considered
-- [ ] Religious sensitivities respected
-- [ ] Traditional vs. modern balance appropriate
-- [ ] Accurate cultural symbols and elements
-- [ ] Respectful representation of authority figures
-
-**International Representation:**
-
-- [ ] Avoiding cultural stereotypes
-- [ ] Neutral diplomatic presentation
-- [ ] Balanced perspective maintained
-- [ ] Respectful cross-cultural elements
-- [ ] Appropriate formal protocols
-
-#### Post-Generation Review
-
-**Content Appropriateness:**
-
-- [ ] No cultural misrepresentations
-- [ ] Dignified portrayal of all subjects
-- [ ] Accurate cultural details
-- [ ] Professional journalistic standards
-- [ ] Community sensitivity respected
-
-### **Appendix C: Legal and Compliance Framework**
-
-#### Copyright Considerations
-
-**Safe Practices:**
-
-- Substantial human modification of AI outputs
-- Original concept development beyond AI generation
-- Multiple source blending and transformation
-- Documentation of creative process
 
-**Risk Factors:**
+**Component Breakdown:**
 
-- Direct commercial use without modification
-- Replication of recognizable copyrighted styles
-- Use of trademarked elements or logos
-- Celebrity or public figure likeness issues
+- **Style Declaration (10%)**: Artistic approach and medium
+- **Subject/Scene (30%)**: Primary content and action
+- **Composition (20%)**: Framing, perspective, and arrangement
+- **Lighting (15%)**: Illumination style and mood
+- **Technical Specs (15%)**: Quality, resolution, format
+- **Cultural Context (10%)**: Sensitivity and authenticity markers
 
-#### Iranian Media Compliance
+### **Core Quality Principles**
 
 **Professional Standards:**
+- **Accuracy**: Factual and culturally authentic representation
+- **Clarity**: Clear communication of intended message
+- **Efficiency**: Optimized for 1-2 day production deadlines
+- **Compliance**: Adherent to Iranian media standards
+- **Versatility**: Adaptable across multiple AI platforms
 
-- Respectful representation of government officials
-- Appropriate cultural and religious sensitivity
-- Balanced international coverage
-- Factual accuracy in visual representation
+---
 
-**Technical Requirements:**
+## **2. Platform Configuration Guide** {#platform-configuration}
 
-- Quality standards for broadcast and print
-- Format specifications for different media
-- Archive and documentation standards
-- Distribution and usage guidelines
+### **DALL-E 3 Configuration**
 
-This comprehensive guide provides the foundation for professional text-to-image AI use in journalism, with specific attention to Iranian cultural context and international news coverage standards. Regular updates and community feedback will ensure continued relevance and effectiveness.
+**Strengths**: Natural language processing, content safety, text integration
+**Best For**: News graphics, social media content, quick turnaround
+
+**Optimization Settings:**
+```
+Approach: Conversational and descriptive
+Style: "Professional news photography" or "Editorial illustration"
+Quality Boosters: "8K resolution, professional photography standards"
+Safety: Built-in content filtering for public figures
+Text Integration: "Include readable Persian text: [specific text]"
+```
+
+**Template Structure for DALL-E 3:**
+```
+"Professional [style] showing [subject] in [setting], [composition details], [lighting description], photographed with [camera specs], [cultural context], high resolution, news quality"
+```
+
+### **Leonardo AI Configuration**
+
+**Strengths**: PhotoReal mode, canvas editing, preset styles
+**Best For**: Cinematic content, video covers, artistic content
+
+**Recommended Settings:**
+```
+Model: Phoenix or Leonardo Diffusion XL
+PhotoReal: Enable for documentary content
+Alchemy: Enable for enhanced quality
+Guidance Scale: 7-12 (7 for creative, 12 for precise)
+Elements: Add relevant style elements
+Negative Prompt: "low quality, amateur, inappropriate"
+```
+
+**Template Structure for Leonardo:**
+```
+[Style element], [detailed subject description], [environmental context], [lighting specifics], [emotional tone], professional quality, [aspect ratio]
+```
+
+### **Stable Diffusion 3.5 Configuration**
+
+**Strengths**: Maximum control, custom models, negative prompting
+**Best For**: High-quality production, batch generation, custom styles
+
+**Technical Parameters:**
+```
+Sampler: DPM++ 2M Karras
+Steps: 25-35 (journalism), 40-50 (artistic)
+CFG Scale: 7-9 (balanced), 10-12 (strict adherence)
+Resolution: 1024x1024 base, upscale to 2048x2048
+Negative Prompt: [Comprehensive quality control]
+```
+
+**Advanced Features:**
+- **ControlNet**: For composition control
+- **LoRA Models**: For specific artistic styles
+- **Inpainting**: For corrections and refinements
+
+### **Flux/Imagine-AI Configuration**
+
+**Strengths**: Fast generation, good prompt understanding
+**Best For**: Rapid prototyping, concept development
+
+**Settings:**
+```
+Model: Flux.1-dev or Schnell
+Steps: 20-30
+Guidance: 3.5-7
+Aspect Ratio: Custom based on need
+Quality: High
+```
+
+---
+
+## **3. Content Category Templates** {#content-templates}
+
+### **3.1 News and Media Content**
+
+#### **YouTube Video Covers (16:9)**
+
+**Template A - Political Coverage:**
+```
+"Professional news photography showing [political figure/event] in [official setting], dynamic composition with subject positioned on left third, dramatic studio lighting with soft shadows, shot with 85mm lens creating shallow depth of field, serious authoritative mood, Persian governmental context, ultra-high resolution 16:9 format, broadcast quality"
+```
+
+**Template B - Economic/Social Issues:**
+```
+"Documentary style photograph of [economic subject/social scene], wide establishing shot showing environmental context, natural daylight illumination, multiple depth layers with foreground elements, journalistic authenticity, Iranian cultural setting, professional news standards, 16:9 cinematic composition"
+```
+
+#### **Instagram Reels/Stories (9:16)**
+
+**Template:**
+```
+"Vertical mobile-optimized composition showing [subject] in [context], centered subject with strong background contrast, portrait lighting setup, bold visual hierarchy for small screen viewing, engaging eye contact or action, culturally appropriate Iranian setting, high contrast colors, 9:16 aspect ratio, social media optimized"
+```
+
+#### **Educational Explainer Graphics**
+
+**Template:**
+```
+"Clean infographic style illustration of [concept], minimalist design with clear visual hierarchy, educational color palette (blues and greens), professional typography integration space, balanced composition with icons and symbols, Persian cultural elements subtly integrated, high clarity for digital display, informative and accessible design"
+```
+
+### **3.2 Cultural and Religious Content**
+
+#### **Shiite Religious Imagery**
+
+**Template A - Ceremonial Events:**
+```
+"Respectful documentation of [religious ceremony] in [traditional setting], participants in appropriate religious attire, warm natural lighting creating reverent atmosphere, wide angle showing community participation, cultural authenticity prioritized, traditional Persian Islamic architectural elements, dignified composition respecting religious sensitivities, high quality documentary style"
+```
+
+**Template B - Symbolic Representation:**
+```
+"Sacred symbolic composition featuring [religious symbols - Alam, Zuljanah, etc.], traditional Persian artistic style, rich jewel tones (emerald green, deep blue, gold), symbolic rather than literal representation, respectful treatment of religious themes, traditional Islamic geometric patterns, spiritual atmosphere with divine light effects, cultural heritage preservation quality"
+```
+
+#### **Iranian Cultural Heritage**
+
+**Template:**
+```
+"Authentic Persian cultural scene showing [cultural element], traditional Iranian artistic style, rich heritage colors reflecting regional traditions, environmental storytelling through architectural details, celebration of Iranian identity, historical accuracy in costume and setting, warm natural lighting, cultural pride and dignity, museum exhibition quality"
+```
+
+#### **Historical Figures**
+
+**Template:**
+```
+"Historically accurate representation of [historical period/context], figure shown in silhouette or from behind maintaining dignity, authentic period clothing and architectural setting, dramatic lighting suggesting historical significance, Persian miniature painting influence, symbolic elements representing historical importance, respectful artistic interpretation, educational value prioritized"
+```
+
+---
+
+## **4. Visual Style Frameworks** {#visual-styles}
+
+### **4.1 Hyperrealistic Style**
+
+**Core Formula:**
+```
+"Hyperrealistic [subject] with ultra-detailed surface textures, professional photography lighting, every material showing authentic wear patterns, realistic skin texture with natural imperfections, precise fabric weave detail, environmental elements with photographic accuracy, shot with professional DSLR camera, studio lighting setup, 8K resolution, photojournalistic quality"
+```
+
+**Enhancement Keywords:**
+- "Ultra-detailed surface textures"
+- "Photographic accuracy"
+- "Professional DSLR quality"
+- "Realistic material properties"
+- "Natural lighting physics"
+
+### **4.2 Cinematic Style**
+
+**Core Formula:**
+```
+"Cinematic [subject] with dramatic movie lighting, epic composition using rule of thirds, color grading with [warm/cool] tones, depth of field creating professional film look, atmospheric haze and lens flares, shot with anamorphic lens, Hollywood production values, epic scale and grandeur, movie poster quality, 16:9 widescreen format"
+```
+
+**Enhancement Keywords:**
+- "Cinematic lighting"
+- "Anamorphic lens"
+- "Color grading"
+- "Epic composition"
+- "Film production quality"
+
+### **4.3 Photography Style**
+
+**Portrait Photography:**
+```
+"Professional portrait of [subject] with three-point lighting setup, shallow depth of field isolating subject, natural expression and posture, professional headshot quality, studio or environmental portrait setting, appropriate cultural context, expert photography techniques, commercial portrait standards"
+```
+
+**Documentary Photography:**
+```
+"Documentary photograph capturing [scene] with authentic candid moment, natural available lighting, environmental storytelling, photojournalistic integrity, real-world authenticity, unposed natural behavior, cultural sensitivity, Pulitzer Prize photography quality"
+```
+
+### **4.4 Realistic Style**
+
+**Core Formula:**
+```
+"Realistic [subject] with natural proportions and accurate details, balanced lighting without dramatic effects, authentic materials and textures, true-to-life colors and shading, practical everyday setting, honest representation without artistic exaggeration, clean professional presentation, high quality realistic rendering"
+```
+
+### **4.5 Pixar/Disney Style**
+
+**Core Formula:**
+```
+"Pixar animation style [subject] with smooth 3D rendering, bright cheerful colors, exaggerated but appealing character design, friendly facial expressions, soft rounded features, magical atmosphere with warm lighting, family-friendly content, high-quality 3D animation, Disney/Pixar production standards"
+```
+
+**Cultural Adaptation:**
+```
+"Persian-inspired Pixar style characters wearing traditional Iranian clothing, Middle Eastern architectural backgrounds, warm desert color palette, respectful cultural representation suitable for Iranian children, Islamic artistic sensibilities maintained"
+```
+
+### **4.6 Sticker/Graffiti Style**
+
+**Core Formula:**
+```
+"Bold graphic sticker design of [subject] with thick black outlines, vibrant flat colors, simplified iconic form, street art aesthetics, spray paint texture effects, urban artistic style, high contrast design readable at small sizes, vector art quality, contemporary graphic design"
+```
+
+---
+
+## **5. Cultural Sensitivity and Compliance** {#compliance}
+
+### **Iranian Media Standards Checklist**
+
+**Religious Content:**
+- ✅ No direct facial depiction of religious figures
+- ✅ Respectful symbolic representation
+- ✅ Appropriate religious dress codes
+- ✅ Cultural authenticity in architectural elements
+- ✅ Dignified treatment of sacred themes
+
+**Political Content:**
+- ✅ Neutral diplomatic representation
+- ✅ Appropriate formal protocols
+- ✅ Balanced international coverage
+- ✅ Professional governmental settings
+- ✅ Respectful leadership portrayal
+
+**Social Content:**
+- ✅ Family-appropriate imagery
+- ✅ Cultural diversity representation
+- ✅ Progressive while traditional balance
+- ✅ Educational value prioritized
+- ✅ Community dignity maintained
+
+### **Universal Negative Prompts by Category**
+
+**Quality Control:**
+```
+"low quality, blurry, pixelated, amateur, distorted, watermark, signature, text artifacts, jpeg compression, low resolution, bad anatomy, deformed"
+```
+
+**Cultural Sensitivity:**
+```
+"inappropriate religious content, disrespectful portrayal, western stereotypes, orientalist clichés, culturally insensitive elements, anachronistic elements"
+```
+
+**Professional Standards:**
+```
+"unprofessional, casual snapshot, poor lighting, bad composition, cluttered background, distracting elements, off-brand"
+```
+
+---
+
+## **6. Quality Assurance and Optimization** {#quality-assurance}
+
+### **Pre-Generation Checklist**
+
+**Content Planning:**
+- [ ] Clear objective defined
+- [ ] Target audience identified
+- [ ] Cultural context considered
+- [ ] Platform requirements noted
+- [ ] Style approach selected
+
+**Technical Preparation:**
+- [ ] Appropriate AI platform chosen
+- [ ] Template selected and customized
+- [ ] Parameters optimized
+- [ ] Negative prompts prepared
+- [ ] Quality standards defined
+
+### **Post-Generation Evaluation**
+
+**Technical Quality:**
+- [ ] Resolution meets requirements
+- [ ] Composition professionally executed
+- [ ] Lighting appropriate for content
+- [ ] Color accuracy maintained
+- [ ] No visible artifacts or distortions
+
+**Content Accuracy:**
+- [ ] Cultural elements authentic
+- [ ] Religious sensitivity maintained
+- [ ] Historical accuracy verified
+- [ ] Brand guidelines followed
+- [ ] Message clearly communicated
+
+**Platform Optimization:**
+- [ ] Aspect ratio correct
+- [ ] File size appropriate
+- [ ] Format suitable for intended use
+- [ ] Color space optimized
+- [ ] Metadata properly tagged
+
+### **Iteration Strategy**
+
+**First Generation (Concept):**
+- Use simplified prompt for basic composition
+- Focus on overall layout and style
+- Generate 3-5 variations quickly
+
+**Second Generation (Refinement):**
+- Enhance best concept with detailed descriptors
+- Add specific cultural and technical elements
+- Fine-tune composition and lighting
+
+**Final Generation (Polish):**
+- Perfect selected version with highest quality settings
+- Apply post-processing if needed
+- Optimize for final delivery format
+
+---
+
+## **7. Implementation Workflow** {#implementation}
+
+### **Daily Workflow Integration**
+
+**Morning Setup (15 minutes):**
+1. Review day's content requirements
+2. Select appropriate templates
+3. Prepare platform-specific settings
+4. Queue generation tasks by priority
+
+**Content Production (45-90 minutes per item):**
+1. **Analysis** (10 min): Define requirements and select template
+2. **Generation** (20-40 min): Create multiple variations
+3. **Selection** (10 min): Choose best results
+4. **Refinement** (15-30 min): Enhance and optimize
+5. **Review** (10 min): Quality check and approval
+
+**Batch Processing Strategy:**
+- Group similar content types together
+- Use consistent settings within batches
+- Maintain template library for quick access
+- Document successful approaches
+
+### **Emergency/Breaking News Protocol**
+
+**30-Minute Turnaround:**
+1. Use DALL-E 3 for fastest generation
+2. Apply pre-tested breaking news template
+3. Focus on single strong concept
+4. Minimal post-processing
+5. Quick cultural sensitivity check
+
+**Template for Breaking News:**
+```
+"Breaking news style photograph of [event/situation] in [location], urgent journalistic documentation, professional news photography, dramatic natural lighting, serious authoritative mood, Iranian news standards, broadcast quality, immediate news value"
+```
+
+### **Quality Control Documentation**
+
+**Success Metrics Tracking:**
+- Generation time vs. quality achieved
+- Cultural accuracy assessment scores
+- Audience engagement on published content
+- Platform performance analytics
+- Feedback from editorial team
+
+**Continuous Improvement:**
+- Weekly review of generated content
+- Template refinement based on results
+- Platform performance comparison
+- Cultural consultant feedback integration
+- Technology advancement adoption
+
+---
+
+## **Template Quick Reference Library**
+
+### **Copy-Paste Ready Templates**
+
+**Political News (16:9):**
+```
+Professional news photography of [political subject] in [governmental setting], authoritative composition with dramatic studio lighting, official Iranian governmental context, broadcast journalism quality, 16:9 aspect ratio
+```
+
+**Cultural Event (1:1):**
+```
+Documentary photograph of [Iranian cultural celebration] with authentic traditional elements, warm natural lighting, respectful cultural representation, community celebration atmosphere, social media optimized square format
+```
+
+**Religious Content:**
+```
+Respectful symbolic representation of [religious theme] in traditional Persian artistic style, sacred atmosphere with divine lighting, cultural authenticity prioritized, Islamic artistic sensibilities, spiritual reverence maintained
+```
+
+**Educational Content:**
+```
+Clean educational illustration explaining [concept], minimalist design with clear visual hierarchy, professional color palette, Iranian educational context, high clarity for digital learning platforms
+```
+
+**Breaking News:**
+```
+Urgent news photography documenting [breaking situation], immediate journalistic value, dramatic natural lighting, serious news atmosphere, professional broadcast standards, Iranian media compliance
+```
+
+---
+
+## **8. Troubleshooting and Debugging Guide** {#troubleshooting}
+
+### **8.1 Common Generation Issues and Solutions**
+
+#### **Problem: Poor Image Quality**
+
+**Symptoms:**
+- Blurry or pixelated outputs
+- Low detail resolution
+- Artificial or fake-looking results
+- Poor lighting and composition
+
+**Debugging Steps:**
+1. **Check Platform Settings:**
+   ```
+   DALL-E 3: Add "8K resolution, professional photography, ultra-detailed"
+   Leonardo AI: Enable Alchemy + PhotoReal, set Guidance to 10+
+   Stable Diffusion: Increase steps to 35+, CFG scale 8-10
+   Flux: Set quality to High, increase guidance to 7
+   ```
+
+2. **Enhance Prompt Structure:**
+   ```
+   Add: "professional photography, studio lighting, high resolution"
+   Add: "masterpiece quality, award-winning photography"
+   Add: "ultra-detailed, sharp focus, perfect composition"
+   ```
+
+3. **Improve Negative Prompts:**
+   ```
+   "low quality, blurry, pixelated, amateur, distorted, bad anatomy, 
+   worst quality, jpeg artifacts, watermark, signature"
+   ```
+
+#### **Problem: Culturally Inappropriate Content**
+
+**Symptoms:**
+- Western stereotypes in Iranian/Islamic content
+- Inappropriate religious representations
+- Culturally insensitive elements
+- Anachronistic details
+
+**Debugging Steps:**
+1. **Strengthen Cultural Context:**
+   ```
+   Add: "authentic Iranian culture, respectful Islamic representation"
+   Add: "traditional Persian aesthetics, cultural authenticity"
+   Add: "appropriate religious sensitivity, dignified portrayal"
+   ```
+
+2. **Use Specific Cultural Markers:**
+   ```
+   Architecture: "Persian Islamic architecture, traditional Iranian design"
+   Clothing: "authentic Middle Eastern attire, culturally appropriate dress"
+   Context: "Iranian cultural setting, Persian cultural elements"
+   ```
+
+3. **Apply Cultural Negative Prompts:**
+   ```
+   "western stereotypes, orientalist clichés, inappropriate religious content, 
+   cultural insensitivity, anachronistic elements, disrespectful portrayal"
+   ```
+
+#### **Problem: Inconsistent Results Across Platforms**
+
+**Symptoms:**
+- Same prompt produces different quality on different platforms
+- Style inconsistency between generations
+- Unpredictable output quality
+
+**Debugging Steps:**
+1. **Platform-Specific Optimization:**
+   ```
+   DALL-E 3: Use natural, descriptive language
+   Leonardo AI: Add specific style elements
+   Stable Diffusion: Use technical parameters and negative prompts
+   Flux: Keep prompts clear and concise
+   ```
+
+2. **Standardize Quality Markers:**
+   ```
+   Universal: "professional quality, high resolution, masterpiece"
+   Add platform-specific quality boosters from Section 2
+   ```
+
+3. **Test and Document:**
+   ```
+   - Generate same concept on all platforms
+   - Document which platform works best for each content type
+   - Create platform-specific template variations
+   ```
+
+### **8.2 Platform-Specific Troubleshooting**
+
+#### **DALL-E 3 Issues**
+
+**Issue: Content Policy Blocks**
+```
+Solution: Rephrase sensitive terms
+Replace: "battle, war, violence" → "historical event, commemoration"
+Replace: "martyrdom" → "sacrifice, devotion"
+Add: "artistic representation, cultural documentation"
+```
+
+**Issue: Text Generation Problems**
+```
+Solution: Be specific about text requirements
+Add: "readable Persian text saying '[exact text]'"
+Add: "clear calligraphy, legible text, professional typography"
+```
+
+#### **Leonardo AI Issues**
+
+**Issue: PhotoReal Mode Not Working**
+```
+Check: Model compatibility (Phoenix works best with PhotoReal)
+Settings: Enable both Alchemy and PhotoReal
+Prompt: Add "photorealistic, professional photography"
+```
+
+**Issue: Style Inconsistency**
+```
+Use Elements: Add specific style elements from library
+Fix Guidance: Set to 10-12 for better prompt adherence
+Add Keywords: "consistent style, unified aesthetic"
+```
+
+#### **Stable Diffusion Issues**
+
+**Issue: Anatomy Problems**
+```
+Negative Prompt: "bad anatomy, deformed, mutated, extra limbs, 
+malformed hands, poorly drawn face"
+Parameters: Increase CFG scale to 10-12
+Add: "correct anatomy, natural proportions, realistic human form"
+```
+
+**Issue: Style Mixing**
+```
+Strengthen Style: Use (style:1.3) weighting
+Negative: "mixed styles, inconsistent art style, style confusion"
+LoRA: Use specific style LoRAs for consistency
+```
+
+#### **Flux Issues**
+
+**Issue: Poor Prompt Understanding**
+```
+Simplify: Use clear, direct language
+Structure: Subject + action + style + quality
+Avoid: Complex artistic terminology
+```
+
+### **8.3 Content-Specific Debugging**
+
+#### **News Content Issues**
+
+**Problem: Not Professional Enough**
+```
+Add: "professional journalism, news photography standards"
+Add: "broadcast quality, editorial photography"
+Settings: Use higher quality settings on all platforms
+```
+
+**Problem: Poor Mobile Optimization**
+```
+Composition: "mobile-optimized, clear subject focus"
+Contrast: "high contrast, bold visual hierarchy"
+Simplify: Reduce background complexity
+```
+
+#### **Religious Content Issues**
+
+**Problem: Inappropriate Religious Representation**
+```
+Template: Use symbolic representation templates from Section 3.2
+Add: "respectful symbolic representation, no direct depiction"
+Cultural Review: Always run through cultural compliance checklist
+```
+
+**Problem: Historical Inaccuracy**
+```
+Research: Verify historical details before generation
+Add: "historically accurate, authentic period details"
+Consult: Check with cultural experts for sensitive content
+```
+
+### **8.4 Quality Improvement Protocols**
+
+#### **Iterative Enhancement Process**
+
+**Step 1: Diagnostic Analysis**
+```
+1. Identify specific quality issues
+2. Check against quality standards checklist
+3. Determine if issue is technical or content-related
+4. Select appropriate debugging approach
+```
+
+**Step 2: Systematic Testing**
+```
+1. Apply one fix at a time
+2. Test on same prompt to isolate variables
+3. Document what works and what doesn't
+4. Build successful approach into template
+```
+
+**Step 3: Template Refinement**
+```
+1. Update templates based on successful fixes
+2. Add successful phrases to enhancement keywords
+3. Update negative prompts with problem preventers
+4. Document platform-specific optimizations
+```
+
+#### **Emergency Fixes for Deadline Pressure**
+
+**30-Second Fixes:**
+```
+Quality: Add "professional, high quality, masterpiece"
+Detail: Add "ultra-detailed, sharp focus"
+Style: Add "professional photography" or relevant style
+```
+
+**2-Minute Fixes:**
+```
+Platform Switch: Try different AI platform
+Template Switch: Use proven template from library
+Parameter Adjustment: Apply known good settings
+```
+
+**5-Minute Fixes:**
+```
+Complete Rewrite: Start with proven template
+Research: Quick check of successful similar content
+Platform Optimization: Apply full platform-specific settings
+```
+
+### **8.5 Prevention Strategies**
+
+#### **Pre-Generation Prevention**
+
+**Quality Prevention Checklist:**
+- [ ] Appropriate platform selected for content type
+- [ ] Template tested and proven for similar content
+- [ ] Cultural elements verified for appropriateness
+- [ ] Technical parameters optimized for platform
+- [ ] Negative prompts comprehensive and updated
+
+**Cultural Prevention Checklist:**
+- [ ] Religious sensitivity requirements reviewed
+- [ ] Iranian cultural elements authenticated
+- [ ] Historical accuracy verified where applicable
+- [ ] International representation balanced and respectful
+- [ ] Community standards compliance confirmed
+
+#### **Documentation and Learning**
+
+**Issue Tracking:**
+```
+Problem: [Specific issue description]
+Platform: [AI platform used]
+Prompt: [Original prompt that failed]
+Solution: [What fixed the issue]
+Prevention: [How to avoid in future]
+```
+
+**Success Pattern Documentation:**
+```
+Content Type: [News/Religious/Cultural]
+Working Template: [Successful template used]
+Platform Settings: [Optimal configuration]
+Quality Markers: [Effective enhancement keywords]
+Notes: [Special considerations or tips]
+```
+
+---
+
+**Total System Length: 5,847 words**
+
+This comprehensive system provides everything needed for professional, culturally sensitive, and technically excellent image generation across all major AI platforms. Each template is designed for direct copy-paste use while maintaining flexibility for customization based on specific project requirements.
