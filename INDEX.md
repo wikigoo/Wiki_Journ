@@ -86,7 +86,7 @@ This section provides practical guides for creating various types of multimedia 
 - **Summary**: A guide to the methods, detection, and tools for identifying manipulated videos, including traditional forgeries, shallowfakes, and deepfakes.
 - **Keywords**: manipulated video, deepfake, shallowfake, video forensics, digital forgery, misinformation, content verification.
 
-### 3.6. Video Editing
+### 3.6. Fundamentals of Editing News Videos
 - **Summary**: A practical guide to editing news videos for novices, covering pre-editing steps, fundamental techniques, common news formats (VO, SOT, VOSOT, package), and storytelling with B-roll.
 - **Keywords**: video editing, news video, B-roll, voice-over (VO), sound on tape (SOT), news package, color correction, audio editing.
 
