@@ -1,222 +1,258 @@
-# 📚 KNOWLEDGE BASE INDEX & METADATA GUIDE
-
-**Repository:** Journalist-Knowledge-Base  
-**Purpose:** Comprehensive reference system for AI-powered multimedia journalism and content creation  
-**Target Users:** Professional journalists, content creators, AI chatbot assistants  
-**Last Updated:** 2025  
-
----
-
-## 🗂️ DOCUMENT CLASSIFICATION SYSTEM
-
-### **Category A: AI Media Tools Documentation**
-*Complete technical guides for industry-standard generative AI tools*
-
-| Tool | File | Key Use Cases | Search Keywords | Complexity Level |
-|------|------|---------------|----------------|------------------|
-| **ComfyUI** | `ComfyUI Guide.md` | Node-based workflow creation, advanced image generation, custom pipelines | workflows, nodes, diffusion, stable diffusion, automation, advanced | Expert |
-| **DALL-E** | `DALL-E Guide.md` | OpenAI image generation, text-to-image, commercial applications | openai, dall-e, dall-e 2, dall-e 3, gpt image, text-to-image | Intermediate |
-| **Flux** | `Flux Guide.md` | Black Forest Labs image generation, professional workflows, text rendering | flux, black forest labs, professional imaging, text-in-images | Intermediate |
-| **Google Imagen** | `Imagen Guide.md` | Google's text-to-image system, multilingual support, enterprise solutions | imagen, google, deepmind, gemini, text-to-image, enterprise | Intermediate |
-| **Seed-VC** | `Seed_VC Guide.md` | Voice conversion, voice cloning, real-time audio processing | voice cloning, speech synthesis, audio, real-time voice | Advanced |
-| **Sora** | `Sora Guide.md` | OpenAI video generation, text-to-video, narrative video creation | sora, openai, video generation, text-to-video, storytelling | Intermediate |
-| **Stable Diffusion** | `Stable Diffusion Guide.md` | Open-source image generation, local deployment, customization | stable diffusion, open source, local AI, customization, prompting | Intermediate |
-| **Veo** | `Veo Guide.md` | Google video generation, professional video creation, audio integration | veo, google video, video creation, audio-visual, professional video | Intermediate |
-| **Whisper** | `Whisper Guide.md` | OpenAI speech recognition, transcription, multilingual audio processing | whisper, transcription, speech-to-text, multilingual, audio processing | Beginner-Intermediate |
-
-### **Category B: Creative Production Framework**
-*Comprehensive guides for content creation methodologies*
-
-| Document | File | Primary Focus | Search Keywords | Best For |
-|----------|------|---------------|----------------|----------|
-| **Documentary Film Guide** | `Documentary Film All Genres.md` | Film theory, documentary modes, storytelling techniques, production workflows | documentary, film theory, nichols modes, storytelling, video production, genres | Creative professionals, filmmakers, video content creators |
-
-### **Category C: Professional Systems**
-*Complete workflow systems for professional content production*
-
-| System | File | Core Function | Search Keywords | Target User |
-|--------|------|---------------|----------------|-------------|
-| **Elite Multimedia Journalism System v4.0** | `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` | Complete newsroom workflow, Persian/English content creation, AI tool integration | journalism, newsroom, persian, multimedia, rapid production, fact-checking | Professional journalists, news organizations |
+# 📚 JOURNALIST KNOWLEDGE BASE - MASTER INDEX
+**Repository:** https://github.com/wikigoo/Journalist-Knowledge-Base  
+**Version:** Dynamic Index v1.0  
+**Last Updated:** 2025-01-04  
+**Purpose:** Comprehensive AI-powered multimedia journalism reference system
 
 ---
 
-## 🔍 QUICK REFERENCE GUIDE FOR AI ASSISTANTS
+## 🎯 QUICK NAVIGATION MATRIX
 
-### **When User Asks About...**
-
-#### **Image Generation:**
-- **Simple text-to-image:** Reference DALL-E Guide
-- **Professional/commercial imaging:** Reference Flux Guide or Imagen Guide
-- **Advanced workflows/automation:** Reference ComfyUI Guide
-- **Open-source/local deployment:** Reference Stable Diffusion Guide
-
-#### **Video Creation:**
-- **Text-to-video generation:** Reference Sora Guide or Veo Guide
-- **Documentary/narrative production:** Reference Documentary Film Guide
-- **Professional video workflows:** Combine Veo Guide + Documentary Guide
-
-#### **Audio Processing:**
-- **Transcription/speech-to-text:** Reference Whisper Guide
-- **Voice cloning/synthesis:** Reference Seed-VC Guide
-- **Podcast/audio content creation:** Reference Journalism System + Whisper Guide
-
-#### **Professional Workflows:**
-- **News production:** Reference Elite Multimedia Journalism System
-- **Content creation pipelines:** Combine Journalism System + relevant AI tool guides
-- **Persian/Farsi content:** Reference Elite Multimedia Journalism System (Cultural Integration Module)
-
-#### **Creative Theory & Methods:**
-- **Storytelling techniques:** Reference Documentary Film Guide
-- **Visual narrative theory:** Reference Documentary Film Guide (Nichols Framework)
-- **Genre classification:** Reference Documentary Film Guide (Thematic Taxonomy)
+| **Need** | **Primary Resource** | **Supporting Tools** | **Complexity** |
+|----------|---------------------|---------------------|----------------|
+| **Breaking News Production** | Elite Multimedia Journalism System → Emergency Protocol | Whisper Guide + DALL-E Guide | ⚡ Rapid |
+| **Video Content Creation** | Sora/Veo Guides + Documentary Framework | OBS Studio + Video Editing | 🎬 Advanced |
+| **Audio/Podcast Production** | Podcasting Guide + Seed-VC + Whisper | News Writing + Script Writing | 🎙️ Intermediate |
+| **Image Generation** | DALL-E/Flux/Stable Diffusion | AI Text-to-Image Prompts | 🖼️ Beginner |
+| **Fact-Checking** | SWIFT-VERIFY Protocol + Fact-Checking Templates | Manipulation Detection Tools | 🔍 Critical |
 
 ---
 
-## 📋 CONTENT DEPTH INDICATORS
+## 📁 REPOSITORY STRUCTURE & CATEGORIES
 
-### **Beginner Level Content:**
-- Whisper Guide (basic transcription)
-- DALL-E Guide (simple image generation)
-- Elite Journalism System (quick-start protocols)
+### **🤖 CATEGORY A: AI MEDIA TOOLS**
+*Location: `/AI Media Tools/`*
+*Purpose: Technical implementation guides for industry-standard AI tools*
 
-### **Intermediate Level Content:**
-- Sora Guide (video creation)
-- Veo Guide (professional video)
-- Flux Guide (professional imaging)
-- Imagen Guide (enterprise solutions)
-- Stable Diffusion Guide (customization)
+| **Tool** | **File** | **Primary Use** | **Integration Level** | **Update Priority** |
+|----------|----------|-----------------|---------------------|-------------------|
+| **ComfyUI** | `ComfyUI Guide.md` | Advanced workflows, automation, node-based creation | Expert | 🔄 High |
+| **DALL-E** | `DALL-E Guide.md` | OpenAI image generation, commercial applications | Professional | 🔄 High |
+| **Flux** | `Flux Guide.md` | Professional imaging, text rendering, Black Forest Labs | Professional | 🔄 High |
+| **Google Imagen** | `Imagen Guide.md` | Enterprise solutions, multilingual support | Professional | 🔄 Medium |
+| **Seed-VC** | `Seed_VC Guide.md` | Voice cloning, real-time audio processing | Advanced | 🔄 Medium |
+| **Sora** | `Sora Guide.md` | OpenAI video generation, narrative content | Professional | 🔄 High |
+| **Stable Diffusion** | `Stable Diffusion Guide.md` | Open-source imaging, local deployment | Advanced | 🔄 High |
+| **Veo** | `Veo Guide.md` | Google video generation, professional workflows | Professional | 🔄 High |
+| **Whisper** | `Whisper Guide.md` | Speech recognition, transcription, multilingual | Essential | 🔄 Critical |
 
-### **Advanced/Expert Level Content:**
-- ComfyUI Guide (complex workflows)
-- Seed-VC Guide (real-time processing)
-- Documentary Film Guide (comprehensive theory)
-- Elite Journalism System (complete professional framework)
+### **🎬 CATEGORY B: DOCUMENTARY & CREATIVE PRODUCTION**
+*Location: `/Documentary/`*
+*Purpose: Storytelling methodologies and genre-specific guidance*
 
----
+| **Resource** | **File** | **Focus Area** | **Target User** | **Content Depth** |
+|--------------|----------|----------------|-----------------|-------------------|
+| **Documentary Theory** | `Documentary Film All Genres.md` | Comprehensive film theory, Nichols framework | Filmmakers, Content Creators | 📖 Comprehensive |
+| **Biography Docs** | `Biography Documentary Genre.md` | Biographical storytelling techniques | Documentary Producers | 📄 Specialized |
+| **News Documentaries** | `News Documentary Genre.md` | Journalistic documentary approaches | News Organizations | 📄 Specialized |
+| **Script Development** | `Video Script Writer.md` | Professional script writing workflows | Writers, Producers | 📝 Practical |
 
-## 🎯 USE CASE MAPPING
+### **📺 CATEGORY C: NEWS MULTIMEDIA PRODUCTION**
+*Location: `/News Multimedia/`*
+*Purpose: Technical production workflows for news and broadcast content*
 
-### **Content Creation Scenarios:**
+| **Production Area** | **File** | **Technical Focus** | **Equipment Level** | **Urgency Support** |
+|-------------------|----------|-------------------|-------------------|-------------------|
+| **Live Broadcasting** | `Live Streaming.md` | Real-time content delivery | Professional | ⚡ Breaking News Ready |
+| **News Writing** | `News Writing.md` | Journalistic writing standards | Basic to Advanced | ✍️ Essential Skill |
+| **OBS Studio** | `OBS Studio Guide.md` | Professional streaming software | Technical | 🔧 Technical Setup |
+| **Podcasting** | `Podcasting.md` | Audio content production workflows | Intermediate | 🎙️ Content Creation |
+| **Deepfake Detection** | `Tools for Manipulated Videos.md` | Verification and authenticity tools | Specialized | 🛡️ Critical Security |
+| **Video Editing** | `Video Editing.md` | Post-production workflows | Technical | ✂️ Production Essential |
+| **Videography** | `Videography.md` | Camera work and visual storytelling | Professional | 📹 Field Production |
+| **vMix** | `vMix.md` | Professional video mixing software | Advanced | 🎛️ Live Production |
 
-#### **News Article Production:**
-1. Elite Multimedia Journalism System (workflow)
-2. Whisper Guide (interview transcription)
-3. DALL-E/Flux Guide (accompanying images)
+### **💬 CATEGORY D: PROMPT ENGINEERING & TEMPLATES**
+*Location: `/Prompt/` & `/Prompt Library/`*
+*Purpose: Ready-to-use templates and prompt optimization*
 
-#### **Educational Video Creation:**
-1. Documentary Film Guide (storytelling approach)
-2. Sora/Veo Guide (video generation)
-3. Whisper Guide (narration/transcription)
+#### **📚 Prompt Library** (`/Prompt Library/`)
+| **Template Type** | **File** | **Application** | **Customization** | **Languages** |
+|------------------|----------|-----------------|-------------------|---------------|
+| **Fact-Checking** | `FACT-CHECKING.md` | Verification protocols | High | EN/FA |
+| **Telegram Channel** | `PS Telegram Channel.md` | Social media content | Platform-specific | EN/FA |
+| **Script Writing** | `SCRIPT WRITING.md` | Content creation templates | High | EN/FA |
+| **Video Analysis** | `Video analysis.md` | Content assessment frameworks | Analytical | EN/FA |
 
-#### **Marketing Content:**
-1. Stable Diffusion/DALL-E Guide (visuals)
-2. Seed-VC Guide (voice content)
-3. Elite Journalism System (production workflow)
+#### **📋 Core Prompts** (`/Prompt/`)
+| **Prompt Category** | **File** | **AI Tool Compatibility** | **Skill Level** |
+|-------------------|----------|-------------------------|----------------|
+| **Text-to-Image** | `AI Text-to-Image Prompt Guide.md` | DALL-E, Flux, Stable Diffusion | All Levels |
+| **Text-to-Text** | `AI Text-to-Text Prompt Guide.md` | ChatGPT, Claude, Gemini | All Levels |
 
-#### **Documentary Production:**
-1. Documentary Film Guide (comprehensive methodology)
-2. Veo Guide (video sequences)
-3. Whisper Guide (interview processing)
-4. ComfyUI Guide (advanced visual effects)
+### **⚙️ CATEGORY E: CORE SYSTEM**
+*Location: Root directory*
+*Purpose: Foundational system architecture and workflows*
 
----
-
-## 🔧 TECHNICAL INTEGRATION MATRIX
-
-### **AI Tool Stack Compatibility:**
-- **Primary Tools:** DALL-E 3, Leonardo, Stable Diffusion 3.5
-- **Audio Stack:** OpenAI.fm, Google AI Studio, Seed VC, Whisper
-- **Video Stack:** Sora, Veo, ComfyUI (animation)
-- **Workflow Integration:** Elite Multimedia Journalism System
-
-### **Platform Optimization:**
-- **Format Support:** 16:9 (standard), 9:16 (mobile/social)
-- **Language Support:** English (primary), Persian/Farsi (cultural integration)
-- **Output Standards:** Broadcast quality, culturally appropriate, fact-checked
-
----
-
-## 📊 SEARCH OPTIMIZATION KEYWORDS
-
-### **Primary Search Terms:**
-`AI tools`, `content creation`, `journalism`, `multimedia`, `image generation`, `video production`, `audio processing`, `transcription`, `voice cloning`, `documentary`, `workflow`, `professional`
-
-### **Technical Terms:**
-`diffusion models`, `text-to-image`, `text-to-video`, `speech-to-text`, `voice synthesis`, `node-based workflows`, `real-time processing`, `API integration`
-
-### **Cultural/Regional:**
-`Persian content`, `Iranian journalism`, `cultural sensitivity`, `multilingual`, `news production`, `broadcast standards`
-
-### **Professional Categories:**
-`newsroom workflows`, `fact-checking`, `rapid production`, `deadline management`, `quality assurance`, `editorial standards`
+| **System Component** | **File** | **Function** | **Critical Level** | **Persian Support** |
+|--------------------|----------|--------------|-------------------|-------------------|
+| **Master System** | `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` | Complete newsroom workflow | 🔴 Critical | ✅ Native |
+| **Navigation** | `README.md` | Repository overview | 🟡 Important | ✅ Integrated |
 
 ---
 
-## ⚡ RAPID ACCESS PROTOCOLS
+## 🔍 SEARCH OPTIMIZATION KEYWORDS
 
-### **For Emergency/Breaking News:**
-1. **Elite Multimedia Journalism System** → Module 7 (Emergency Publish)
-2. **Whisper Guide** → Real-time transcription
-3. **DALL-E/Flux Guide** → Rapid image generation
+### **Tier 1 - Primary Search Terms**
+```
+journalism, multimedia, AI tools, content creation, news production, 
+video generation, image creation, audio processing, fact-checking,
+Persian journalism, Iranian media, breaking news, documentation
+```
 
-### **For Comprehensive Projects:**
-1. **Documentary Film Guide** → Planning and methodology
-2. **AI Tool Guides** → Technical implementation
-3. **Elite Journalism System** → Quality assurance and cultural integration
+### **Tier 2 - Technical Terms**
+```
+diffusion models, text-to-image, text-to-video, speech-to-text,
+voice synthesis, real-time processing, workflow automation,
+prompt engineering, deepfake detection, live streaming
+```
 
-### **For Specific Technical Issues:**
-1. **ComfyUI Guide** → Advanced troubleshooting
-2. **Seed-VC Guide** → Audio processing problems
-3. **Individual tool guides** → Platform-specific solutions
-
----
-
-## 🛡️ QUALITY ASSURANCE REFERENCES
-
-### **Fact-Checking Protocols:**
-- Elite Multimedia Journalism System → SWIFT-VERIFY Protocol
-- All tool guides include accuracy verification methods
-
-### **Cultural Sensitivity:**
-- Elite Multimedia Journalism System → Cultural Integration Framework
-- Documentary Film Guide → Ethical considerations
-
-### **Technical Standards:**
-- Each AI tool guide includes quality specifications
-- Professional output standards across all documents
+### **Tier 3 - Specialized Terms**
+```
+ComfyUI workflows, DALL-E integration, Whisper transcription,
+documentary modes, Nichols framework, OBS configuration,
+vMix production, SWIFT-VERIFY protocol, cultural sensitivity
+```
 
 ---
 
-## 📈 UPDATE TRACKING
+## 🎯 USE CASE SCENARIOS
 
-### **Version Control:**
-- **Elite Multimedia Journalism System:** v4.0 (Current)
-- **AI Tool Guides:** Current as of 2025 model releases
-- **Documentary Guide:** Comprehensive current industry practices
+### **⚡ EMERGENCY WORKFLOWS (0-2 Hours)**
+1. **Breaking News Package**
+   - Primary: `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` → Emergency Protocol
+   - Supporting: `Whisper Guide.md` + `DALL-E Guide.md` + `FACT-CHECKING.md`
+   - Output: Complete multimedia news package
 
-### **Maintenance Schedule:**
-- AI tool capabilities: Quarterly updates
-- Professional standards: Annual review
-- Cultural guidelines: Ongoing assessment
+2. **Rapid Fact-Check**
+   - Primary: `FACT-CHECKING.md` + SWIFT-VERIFY Protocol
+   - Supporting: `Tools for Manipulated Videos.md`
+   - Output: Verified information assessment
+
+### **📹 STANDARD PRODUCTION (2-24 Hours)**
+1. **Documentary Segment**
+   - Primary: `Documentary Film All Genres.md`
+   - Supporting: `Sora Guide.md` + `Video Editing.md` + `Whisper Guide.md`
+   - Output: Professional documentary content
+
+2. **Podcast Episode**
+   - Primary: `Podcasting.md` + `Seed_VC Guide.md`
+   - Supporting: `News Writing.md` + `SCRIPT WRITING.md`
+   - Output: Complete audio content package
+
+### **🎨 CREATIVE PROJECTS (24+ Hours)**
+1. **Multimedia Series**
+   - Primary: `Documentary Film All Genres.md` + AI Tools Suite
+   - Supporting: All relevant technical guides
+   - Output: Professional multimedia series
 
 ---
 
-## 💡 ASSISTANT USAGE TIPS
+## 📊 SYSTEM HEALTH & MAINTENANCE
 
-### **Best Practices for AI Chatbot:**
-1. **Cross-reference multiple guides** for comprehensive solutions
-2. **Check cultural sensitivity** requirements for all content
-3. **Verify technical specifications** against current tool capabilities
-4. **Apply appropriate complexity level** based on user expertise
-5. **Integrate workflow systems** for professional output quality
+### **Update Priority Matrix**
+| **Priority Level** | **Update Frequency** | **Components** |
+|-------------------|---------------------|----------------|
+| 🔴 **Critical** | Weekly | AI tool capabilities, breaking news protocols |
+| 🟡 **High** | Monthly | Technical guides, professional workflows |
+| 🟢 **Medium** | Quarterly | Specialized content, cultural guidelines |
+| 🔵 **Low** | As needed | Documentation, examples |
 
-### **Response Optimization:**
-- **Start with appropriate complexity level**
-- **Reference specific sections** for detailed guidance
-- **Combine multiple documents** for complete solutions
-- **Include quality assurance steps** in all recommendations
-- **Maintain cultural sensitivity** throughout responses
+### **Quality Assurance Checkpoints**
+- [ ] **Technical Accuracy**: All AI tool guides reflect current capabilities
+- [ ] **Cultural Sensitivity**: Persian/Iranian context maintained throughout
+- [ ] **Professional Standards**: Journalism ethics and quality maintained
+- [ ] **Accessibility**: Content appropriate for various skill levels
+- [ ] **Integration**: Cross-document references and workflows functional
 
 ---
 
-**This metadata guide serves as the central navigation system for the Journalist Knowledge Base, enabling rapid, accurate, and culturally sensitive content creation support.**
+## 🔧 OPTIMIZATION RECOMMENDATIONS
+
+### **Current Strengths**
+✅ Comprehensive AI tool coverage  
+✅ Professional journalism framework  
+✅ Cultural integration (Persian/Iranian)  
+✅ Multi-format content support  
+✅ Emergency workflow protocols  
+
+### **Recommended Enhancements**
+
+#### **📈 Priority 1: Content Organization**
+1. **Create Category Landing Pages**
+   - Add overview files for each major category
+   - Include quick-start guides for each section
+   - Cross-reference related documents
+
+2. **Develop Skill-Level Pathways**
+   - Beginner → Intermediate → Advanced learning paths
+   - Progressive complexity within each category
+   - Clear prerequisite identification
+
+#### **🔄 Priority 2: Dynamic Features**
+1. **Version Control System**
+   - Implement semantic versioning for major documents
+   - Track API changes and tool updates
+   - Maintain compatibility matrices
+
+2. **Interactive Elements**
+   - Add decision trees for tool selection
+   - Create workflow diagrams
+   - Include troubleshooting flowcharts
+
+#### **🌐 Priority 3: Expansion Areas**
+1. **Additional Language Support**
+   - Expand Persian content integration
+   - Add Arabic journalism guidelines
+   - Include other regional considerations
+
+2. **Specialized Workflows**
+   - Crisis journalism protocols
+   - Investigative reporting methodologies
+   - Data journalism integration
+
+3. **Community Features**
+   - Contribution guidelines
+   - Template sharing system
+   - Success story documentation
+
+---
+
+## 📱 MOBILE & QUICK ACCESS
+
+### **Essential Quick References**
+- 🆘 **Emergency**: `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` → Module 7
+- ✅ **Fact-Check**: `FACT-CHECKING.md` → SWIFT-VERIFY
+- 🎥 **Video**: `Sora Guide.md` or `Veo Guide.md` → Quick Start
+- 🖼️ **Images**: `DALL-E Guide.md` → Basic Generation
+- 🎙️ **Audio**: `Whisper Guide.md` + `Seed_VC Guide.md`
+
+### **Platform-Specific Access**
+- **Mobile Journalists**: Focus on Whisper + DALL-E + Emergency Protocols
+- **Newsroom Editors**: ELITE System + Fact-Checking + Video Tools
+- **Content Creators**: Documentary Framework + AI Tools Suite
+- **Technical Teams**: All guides with emphasis on integration workflows
+
+---
+
+## 🎯 FUTURE ROADMAP
+
+### **Planned Additions**
+- [ ] **Real-time Collaboration Tools**
+- [ ] **Advanced Analytics Integration**
+- [ ] **Multi-language AI Model Guides**
+- [ ] **Virtual Reality Content Creation**
+- [ ] **Blockchain Verification Methods**
+
+### **Community Requests**
+- [ ] **Video Tutorial Integration**
+- [ ] **Sample Project Templates**
+- [ ] **Industry Case Studies**
+- [ ] **Regulatory Compliance Guides**
+
+---
+
+**This index serves as the central navigation hub for the entire Journalist Knowledge Base, designed for scalability, maintainability, and professional multimedia journalism excellence.**
+
+*Last Index Update: 2025-01-04*  
+*Next Scheduled Review: 2025-02-04*
