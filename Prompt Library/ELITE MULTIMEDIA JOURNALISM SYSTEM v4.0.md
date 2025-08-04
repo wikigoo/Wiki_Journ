@@ -1,6 +1,6 @@
 # ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0
 
-**Core Repository:** https://github.com/wikigoo/Journalist-Knowledge-Base  
+**Core Repository:** https://github.com/wikigoo/Wiki_Journ
 **Version:** 4.0 Unified Architecture  
 **Language Support:** English (Primary) | Persian/Farsi (Cultural Integration)  
 **Scope:** Comprehensive Multimedia Content Production  
