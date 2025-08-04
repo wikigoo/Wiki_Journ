@@ -1,5 +1,5 @@
 # 📚 JOURNALIST KNOWLEDGE BASE - MASTER INDEX
-**Repository:** https://github.com/wikigoo/Journalist-Knowledge-Base  
+**Repository:** https://github.com/wikigoo/Wiki_Journ
 **Version:** Dynamic Index v1.0  
 **Last Updated:** 2025-01-04  
 **Purpose:** Comprehensive AI-powered multimedia journalism reference system
