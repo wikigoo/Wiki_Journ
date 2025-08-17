@@ -1,258 +1,141 @@
-# 📚 JOURNALIST KNOWLEDGE BASE - MASTER INDEX
-**Repository:** https://github.com/wikigoo/Wiki_Journ
-**Version:** Dynamic Index v1.0  
-**Last Updated:** 2025-01-04  
-**Purpose:** Comprehensive AI-powered multimedia journalism reference system
+Of course. Based on our previous analysis, here is a complete and detailed rewrite of your `INDEX.md` file. This optimized version transforms the static list into a dynamic and intelligent portal for your knowledge base, incorporating a more logical structure, learning pathways, and enhanced usability for both you and your AI assistant.
 
----
+-----
 
-## 🎯 QUICK NAVIGATION MATRIX
+# 📚 Journalist AI Knowledge Base - Master Index v2.0
 
-| **Need** | **Primary Resource** | **Supporting Tools** | **Complexity** |
-|----------|---------------------|---------------------|----------------|
-| **Breaking News Production** | Elite Multimedia Journalism System → Emergency Protocol | Whisper Guide + DALL-E Guide | ⚡ Rapid |
-| **Video Content Creation** | Sora/Veo Guides + Documentary Framework | OBS Studio + Video Editing | 🎬 Advanced |
-| **Audio/Podcast Production** | Podcasting Guide + Seed-VC + Whisper | News Writing + Script Writing | 🎙️ Intermediate |
-| **Image Generation** | DALL-E/Flux/Stable Diffusion | AI Text-to-Image Prompts | 🖼️ Beginner |
-| **Fact-Checking** | SWIFT-VERIFY Protocol + Fact-Checking Templates | Manipulation Detection Tools | 🔍 Critical |
+**Repository:** `https://github.com/wikigoo/Wiki_Journ`
+**Version:** Dynamic Index v2.0
+**Last Updated:** 2025-08-17
+**Purpose:** A comprehensive, AI-powered knowledge base for professional multimedia journalism, integrating technical guides, creative frameworks, and ethical standards with a focus on Iranian cultural context.
 
----
+-----
 
-## 📁 REPOSITORY STRUCTURE & CATEGORIES
+## 🚀 Quick Start for Beginners
 
-### **🤖 CATEGORY A: AI MEDIA TOOLS**
+Welcome to the Journalist AI Knowledge Base. If you are new here, use these links to get started with the foundational documents:
+
+1.  **To Understand the Core Workflow:** Begin with the [**ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0**](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/ELITE%2520MULTIMEDIA%2520JOURNALISM%2520SYSTEM%2520v4.0.md). This is the master guide that integrates all principles in this repository.
+2.  **To Create Your First Video:** Review the guides on [**Videography**](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Videography.md) and [**Video Editing**](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Video%2520Editing.md).
+3.  **To Use AI Tools Effectively:** Start with the [**DALL-E Guide**](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/DALL-E%2520Guide.md) for images and the [**Whisper Guide**](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Whisper%2520Guide.md) for audio transcription.
+
+-----
+
+## 🗺️ Learning Pathways
+
+Follow these skill-based pathways to develop specific professional competencies using the resources in this knowledge base.
+
+| Pathway Title | Description | Learning Sequence |
+| :--- | :--- | :--- |
+| **Field Video Journalist** | Master the skills for on-the-ground video reporting, from capturing footage to ensuring its authenticity. | 1. [Videography Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Videography.md) \<br\> 2. [Live Streaming Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Live%2520Streaming.md) \<br\> 3. [Tools for Manipulated Videos](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Tools%2520for%2520Manipulated%2520Videos.md) \<br\> 4. [FACT-CHECKING Protocol](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/FACT-CHECKING.md) |
+| **Analytical Podcast Producer** | Develop the workflow for creating in-depth, culturally relevant news podcasts, from script to final audio. | 1. [Podcasting Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Podcasting.md) \<br\> 2. [News Writing (Persian)](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/News%2520Writing%2520\(Persian\).md) \<br\> 3. [Whisper Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Whisper%2520Guide.md) \<br\> 4. [Seed\_VC Guide (Voice Cloning)](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Seed_VC%2520Guide.md) |
+| **AI Visual Content Strategist**| Learn to generate high-quality, culturally appropriate visual media for news and documentary storytelling.| 1. [AI Text-to-Image Prompt Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt/AI%2520Text-to-Image%2520Prompt%2520Guide.md) \<br\> 2. [Guide to Shia Images AI (Persian)](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/Guide%2520to%2520Shia%2520images%2520%2520AI%2520\(Persian\).md) \<br\> 3. [DALL-E Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/DALL-E%2520Guide.md) & [Stable Diffusion Guide](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Stable%2520Diffusion%2520Guide.md) \<br\> 4. [Sora Guide (Text-to-Video)](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Sora%2520Guide.md) |
+
+-----
+
+## 📁 Repository Structure & Knowledge Categories
+
+### **🤖 Category A: AI Media Tools**
+
 *Location: `/AI Media Tools/`*
-*Purpose: Technical implementation guides for industry-standard AI tools*
+*Purpose: Technical implementation guides for industry-standard AI tools for generating video, images, and audio.*
 
-| **Tool** | **File** | **Primary Use** | **Integration Level** | **Update Priority** |
-|----------|----------|-----------------|---------------------|-------------------|
-| **ComfyUI** | `ComfyUI Guide.md` | Advanced workflows, automation, node-based creation | Expert | 🔄 High |
-| **DALL-E** | `DALL-E Guide.md` | OpenAI image generation, commercial applications | Professional | 🔄 High |
-| **Flux** | `Flux Guide.md` | Professional imaging, text rendering, Black Forest Labs | Professional | 🔄 High |
-| **Google Imagen** | `Imagen Guide.md` | Enterprise solutions, multilingual support | Professional | 🔄 Medium |
-| **Seed-VC** | `Seed_VC Guide.md` | Voice cloning, real-time audio processing | Advanced | 🔄 Medium |
-| **Sora** | `Sora Guide.md` | OpenAI video generation, narrative content | Professional | 🔄 High |
-| **Stable Diffusion** | `Stable Diffusion Guide.md` | Open-source imaging, local deployment | Advanced | 🔄 High |
-| **Veo** | `Veo Guide.md` | Google video generation, professional workflows | Professional | 🔄 High |
-| **Whisper** | `Whisper Guide.md` | Speech recognition, transcription, multilingual | Essential | 🔄 Critical |
+| Tool | File | Primary Use | Last Updated | Update Priority |
+| :--- | :--- | :--- | :--- | :--- |
+| **ComfyUI** | [ComfyUI Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/ComfyUI%2520Guide.md) | Advanced workflows, automation, node-based creation | 2025-08-15 | 🔄 High |
+| **DALL-E** | [DALL-E Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/DALL-E%2520Guide.md) | OpenAI image generation, commercial applications | 2025-08-15 | 🔄 High |
+| **Flux** | [Flux Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Flux%2520Guide.md) | Professional imaging, text rendering | 2025-08-16 | 🔄 High |
+| **Google Imagen** | [Imagen Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Imagen%2520Guide.md) | Enterprise solutions, multilingual support | 2025-08-14 | 🔄 Medium |
+| **Seed-VC** | [Seed\_VC Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Seed_VC%2520Guide.md) | Voice cloning, real-time audio processing | 2025-08-12 | 🔄 Medium |
+| **Sora** | [Sora Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Sora%2520Guide.md) | OpenAI video generation, narrative content | 2025-08-16 | 🔄 High |
+| **Stable Diffusion** | [Stable Diffusion Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Stable%2520Diffusion%2520Guide.md) | Open-source imaging, local deployment | 2025-08-15 | 🔄 High |
+| **Veo** | [Veo Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Veo%2520Guide.md) | Google video generation, professional workflows | 2025-08-16 | 🔄 High |
+| **Whisper** | [Whisper Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Whisper%2520Guide.md) | Speech recognition, transcription, multilingual | 2025-08-12 | 🔴 Critical |
+**Related Topics:** [Prompt Engineering & Templates](https://www.google.com/search?q=%23-category-d-prompt-engineering--templates), [Documentary & Creative Production](https://www.google.com/search?q=%23-category-b-documentary--creative-production)
 
-### **🎬 CATEGORY B: DOCUMENTARY & CREATIVE PRODUCTION**
+-----
+
+### **🎬 Category B: Documentary & Creative Production**
+
 *Location: `/Documentary/`*
-*Purpose: Storytelling methodologies and genre-specific guidance*
+*Purpose: Storytelling methodologies, genre-specific guidance, and scriptwriting frameworks.*
 
-| **Resource** | **File** | **Focus Area** | **Target User** | **Content Depth** |
-|--------------|----------|----------------|-----------------|-------------------|
-| **Documentary Theory** | `Documentary Film All Genres.md` | Comprehensive film theory, Nichols framework | Filmmakers, Content Creators | 📖 Comprehensive |
-| **Biography Docs** | `Biography Documentary Genre.md` | Biographical storytelling techniques | Documentary Producers | 📄 Specialized |
-| **News Documentaries** | `News Documentary Genre.md` | Journalistic documentary approaches | News Organizations | 📄 Specialized |
-| **Script Development** | `Video Script Writer.md` | Professional script writing workflows | Writers, Producers | 📝 Practical |
+| Resource | File | Focus Area | Last Updated |
+| :--- | :--- | :--- | :--- |
+| **Documentary Theory** | [Documentary Film All Genres.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Documentary/1%2520Documentary%2520Film%2520All%2520Genres.md) | Comprehensive film theory, Nichols framework | 2025-07-20 |
+| **Biography Docs** | [Biography Documentary Genre.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Documentary/3%2520Biography%2520Documentary%2520Ganre.md) | Biographical storytelling techniques | 2025-07-22 |
+| **News Documentaries** | [News Documentary Genre.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Documentary/2%2520News%2520Documentary%2520Ganre.md) | Journalistic documentary approaches | 2025-07-25 |
+| **Script Development** | [Video Script Writer.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Documentary/Video%2520Script%2520Writer.md) | Professional script writing workflows | 2025-08-01 |
+**Related Topics:** [News Multimedia Production](https://www.google.com/search?q=%23-category-c-news-multimedia-production), [Prompt Engineering & Templates](https://www.google.com/search?q=%23-category-d-prompt-engineering--templates)
 
-### **📺 CATEGORY C: NEWS MULTIMEDIA PRODUCTION**
+-----
+
+### **📺 Category C: News Multimedia Production**
+
 *Location: `/News Multimedia/`*
-*Purpose: Technical production workflows for news and broadcast content*
+*Purpose: Technical production workflows for news and broadcast content, from field capture to final edit.*
 
-| **Production Area** | **File** | **Technical Focus** | **Equipment Level** | **Urgency Support** |
-|-------------------|----------|-------------------|-------------------|-------------------|
-| **Live Broadcasting** | `Live Streaming.md` | Real-time content delivery | Professional | ⚡ Breaking News Ready |
-| **News Writing** | `News Writing.md` | Journalistic writing standards | Basic to Advanced | ✍️ Essential Skill |
-| **OBS Studio** | `OBS Studio Guide.md` | Professional streaming software | Technical | 🔧 Technical Setup |
-| **Podcasting** | `Podcasting.md` | Audio content production workflows | Intermediate | 🎙️ Content Creation |
-| **Deepfake Detection** | `Tools for Manipulated Videos.md` | Verification and authenticity tools | Specialized | 🛡️ Critical Security |
-| **Video Editing** | `Video Editing.md` | Post-production workflows | Technical | ✂️ Production Essential |
-| **Videography** | `Videography.md` | Camera work and visual storytelling | Professional | 📹 Field Production |
-| **vMix** | `vMix.md` | Professional video mixing software | Advanced | 🎛️ Live Production |
+| Production Area | File | Technical Focus | Last Updated |
+| :--- | :--- | :--- | :--- |
+| **Live Broadcasting** | [Live Streaming.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Live%2520Streaming.md) | Real-time content delivery (RTMP, SRT) | 2025-08-05 |
+| **News Writing (FA)** | [News Writing (Persian).md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/News%2520Writing%2520\(Persian\).md) | Journalistic writing standards for Persian media | 2025-08-10 |
+| **OBS Studio** | [OBS Studio Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/OBS%2520Studio%2520Guide.md) | Professional streaming software | 2025-07-30 |
+| **Podcasting** | [Podcasting.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Podcasting.md) | Audio content production workflows | 2025-08-02 |
+| **Deepfake Detection** | [Tools for Manipulated Videos.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Tools%2520for%2520Manipulated%2520Videos.md) | Verification and authenticity tools | 2025-08-14 |
+| **Video Editing** | [Video Editing.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Video%2520Editing.md) | Post-production workflows | 2025-08-08 |
+| **Videography** | [Videography.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/Videography.md) | Camera work and visual storytelling | 2025-08-07 |
+| **vMix** | [vMix Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/News%2520Multimedia/vMix%2520Guide.md) | Professional video mixing software | 2025-08-06 |
+**Related Topics:** [AI Media Tools](https://www.google.com/search?q=%23-category-a-ai-media-tools), [Documentary & Creative Production](https://www.google.com/search?q=%23-category-b-documentary--creative-production)
 
-### **💬 CATEGORY D: PROMPT ENGINEERING & TEMPLATES**
-*Location: `/Prompt/` & `/Prompt Library/`*
-*Purpose: Ready-to-use templates and prompt optimization*
+-----
 
-#### **📚 Prompt Library** (`/Prompt Library/`)
-| **Template Type** | **File** | **Application** | **Customization** | **Languages** |
-|------------------|----------|-----------------|-------------------|---------------|
-| **Fact-Checking** | `FACT-CHECKING.md` | Verification protocols | High | EN/FA |
-| **Telegram Channel** | `PS Telegram Channel.md` | Social media content | Platform-specific | EN/FA |
-| **Script Writing** | `SCRIPT WRITING.md` | Content creation templates | High | EN/FA |
-| **Video Analysis** | `Video analysis.md` | Content assessment frameworks | Analytical | EN/FA |
+### **💬 Category D: Prompt Engineering & Templates**
 
-#### **📋 Core Prompts** (`/Prompt/`)
-| **Prompt Category** | **File** | **AI Tool Compatibility** | **Skill Level** |
-|-------------------|----------|-------------------------|----------------|
-| **Text-to-Image** | `AI Text-to-Image Prompt Guide.md` | DALL-E, Flux, Stable Diffusion | All Levels |
-| **Text-to-Text** | `AI Text-to-Text Prompt Guide.md` | ChatGPT, Claude, Gemini | All Levels |
+*Location: `/Prompt Library/` & `/Prompt/`*
+*Purpose: Ready-to-use systems, prompt libraries, and guides for interacting effectively with AI models.*
 
-### **⚙️ CATEGORY E: CORE SYSTEM**
-*Location: Root directory*
-*Purpose: Foundational system architecture and workflows*
+| Template Type | File | Application | Last Updated |
+| :--- | :--- | :--- | :--- |
+| **Master System** | [ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/ELITE%2520MULTIMEDIA%2520JOURNALISM%2520SYSTEM%2520v4.0.md) | Core operational prompt for integrated workflows | 2025-08-17 |
+| **Fact-Checking** | [FACT-CHECKING.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/FACT-CHECKING.md) | SWIFT-VERIFY protocol for verification | 2025-08-11 |
+| **Journalism Library** | [Journalism Prompt Library.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/Journalism%2520Prompt%2520Library.md) | Collection of prompts for various journalistic tasks | 2025-08-09 |
+| **Shia Imagery (FA)** | [Guide to Shia images AI (Persian).md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/Guide%2520to%2520Shia%2520images%2520%2520AI%2520\(Persian\).md) | Prompts for culturally specific visual content | 2025-08-13 |
+| **Text-to-Image Guide** | [AI Text-to-Image Prompt Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt/AI%2520Text-to-Image%2520Prompt%2520Guide.md) | Principles of visual description for AI | 2025-08-04 |
+| **Text-to-Text Guide** | [AI Text-to-Text Prompt Guide.md](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt/AI%2520Text-to-Text%2520Prompt%2520Guide.md) | CLEAR framework for effective text prompting | 2025-08-03 |
+**Related Topics:** [AI Media Tools](https://www.google.com/search?q=%23-category-a-ai-media-tools), [News Multimedia Production](https://www.google.com/search?q=%23-category-c-news-multimedia-production)
 
-| **System Component** | **File** | **Function** | **Critical Level** | **Persian Support** |
-|--------------------|----------|--------------|-------------------|-------------------|
-| **Master System** | `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` | Complete newsroom workflow | 🔴 Critical | ✅ Native |
-| **Navigation** | `README.md` | Repository overview | 🟡 Important | ✅ Integrated |
+-----
 
----
+## 💡 Central Glossary & Search Guide
 
-## 🔍 SEARCH OPTIMIZATION KEYWORDS
+  - **Central Glossary of Terms:** For definitions of technical and journalistic terms used throughout this knowledge base, please refer to the (coming soon) `Glossary.md` file.
+  - **How to Use Search Keywords:** Use the keywords below to perform targeted searches within the GitHub repository. The tiered structure helps you find information based on your level of expertise, from general concepts to specific technical details.
 
-### **Tier 1 - Primary Search Terms**
-```
-journalism, multimedia, AI tools, content creation, news production, 
-video generation, image creation, audio processing, fact-checking,
-Persian journalism, Iranian media, breaking news, documentation
-```
+### **Search Optimization Keywords**
 
-### **Tier 2 - Technical Terms**
-```
-diffusion models, text-to-image, text-to-video, speech-to-text,
-voice synthesis, real-time processing, workflow automation,
-prompt engineering, deepfake detection, live streaming
-```
+  * **Tier 1 (Primary Concepts):** `journalism`, `multimedia`, `AI tools`, `content creation`, `news production`, `video generation`, `image creation`, `audio processing`, `fact-checking`, `Persian journalism`, `Iranian media`, `breaking news`, `documentary`
+  * **Tier 2 (Technical Terms):** `diffusion models`, `text-to-image`, `text-to-video`, `speech-to-text`, `voice synthesis`, `real-time processing`, `workflow automation`, `prompt engineering`, `deepfake detection`, `live streaming`, `RTMP`, `SRT`, `NDI`
+  * **Tier 3 (Specialized Tools & Methods):** `ComfyUI`, `DALL-E`, `Whisper`, `Nichols framework`, `OBS Studio`, `vMix`, `SWIFT-VERIFY protocol`, `cultural sensitivity`
 
-### **Tier 3 - Specialized Terms**
-```
-ComfyUI workflows, DALL-E integration, Whisper transcription,
-documentary modes, Nichols framework, OBS configuration,
-vMix production, SWIFT-VERIFY protocol, cultural sensitivity
-```
+-----
 
----
+## 📊 System Health & Maintenance
 
-## 🎯 USE CASE SCENARIOS
-
-### **⚡ EMERGENCY WORKFLOWS (0-2 Hours)**
-1. **Breaking News Package**
-   - Primary: `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` → Emergency Protocol
-   - Supporting: `Whisper Guide.md` + `DALL-E Guide.md` + `FACT-CHECKING.md`
-   - Output: Complete multimedia news package
-
-2. **Rapid Fact-Check**
-   - Primary: `FACT-CHECKING.md` + SWIFT-VERIFY Protocol
-   - Supporting: `Tools for Manipulated Videos.md`
-   - Output: Verified information assessment
-
-### **📹 STANDARD PRODUCTION (2-24 Hours)**
-1. **Documentary Segment**
-   - Primary: `Documentary Film All Genres.md`
-   - Supporting: `Sora Guide.md` + `Video Editing.md` + `Whisper Guide.md`
-   - Output: Professional documentary content
-
-2. **Podcast Episode**
-   - Primary: `Podcasting.md` + `Seed_VC Guide.md`
-   - Supporting: `News Writing.md` + `SCRIPT WRITING.md`
-   - Output: Complete audio content package
-
-### **🎨 CREATIVE PROJECTS (24+ Hours)**
-1. **Multimedia Series**
-   - Primary: `Documentary Film All Genres.md` + AI Tools Suite
-   - Supporting: All relevant technical guides
-   - Output: Professional multimedia series
-
----
-
-## 📊 SYSTEM HEALTH & MAINTENANCE
+This section ensures the knowledge base remains a living, reliable resource. The "Last Updated" column in the tables above provides at-a-glance status for each document.
 
 ### **Update Priority Matrix**
-| **Priority Level** | **Update Frequency** | **Components** |
-|-------------------|---------------------|----------------|
-| 🔴 **Critical** | Weekly | AI tool capabilities, breaking news protocols |
-| 🟡 **High** | Monthly | Technical guides, professional workflows |
-| 🟢 **Medium** | Quarterly | Specialized content, cultural guidelines |
-| 🔵 **Low** | As needed | Documentation, examples |
+
+| Priority Level | Update Frequency | Components |
+| :--- | :--- | :--- |
+| 🔴 **Critical** | Weekly/Bi-Weekly | [AI Tool Guides](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/AI%2520Media%2520Tools/Sora%2520Guide.md), Breaking News Protocols, [FACT-CHECKING](https://www.google.com/search?q=wikigoo/wiki_journ/Wiki_Journ-e44e3048467341472ca11d621ba9a9dbde4d8460/Prompt%2520Library/FACT-CHECKING.md) |
+| 🟡 **High** | Monthly | Technical Production Guides, Prompt Libraries |
+| 🟢 **Medium** | Quarterly | Documentary Frameworks, Cultural Guidelines |
+| 🔵 **Low** | As Needed | Foundational Theory, System Documentation |
 
 ### **Quality Assurance Checkpoints**
-- [ ] **Technical Accuracy**: All AI tool guides reflect current capabilities
-- [ ] **Cultural Sensitivity**: Persian/Iranian context maintained throughout
-- [ ] **Professional Standards**: Journalism ethics and quality maintained
-- [ ] **Accessibility**: Content appropriate for various skill levels
-- [ ] **Integration**: Cross-document references and workflows functional
 
----
-
-## 🔧 OPTIMIZATION RECOMMENDATIONS
-
-### **Current Strengths**
-✅ Comprehensive AI tool coverage  
-✅ Professional journalism framework  
-✅ Cultural integration (Persian/Iranian)  
-✅ Multi-format content support  
-✅ Emergency workflow protocols  
-
-### **Recommended Enhancements**
-
-#### **📈 Priority 1: Content Organization**
-1. **Create Category Landing Pages**
-   - Add overview files for each major category
-   - Include quick-start guides for each section
-   - Cross-reference related documents
-
-2. **Develop Skill-Level Pathways**
-   - Beginner → Intermediate → Advanced learning paths
-   - Progressive complexity within each category
-   - Clear prerequisite identification
-
-#### **🔄 Priority 2: Dynamic Features**
-1. **Version Control System**
-   - Implement semantic versioning for major documents
-   - Track API changes and tool updates
-   - Maintain compatibility matrices
-
-2. **Interactive Elements**
-   - Add decision trees for tool selection
-   - Create workflow diagrams
-   - Include troubleshooting flowcharts
-
-#### **🌐 Priority 3: Expansion Areas**
-1. **Additional Language Support**
-   - Expand Persian content integration
-   - Add Arabic journalism guidelines
-   - Include other regional considerations
-
-2. **Specialized Workflows**
-   - Crisis journalism protocols
-   - Investigative reporting methodologies
-   - Data journalism integration
-
-3. **Community Features**
-   - Contribution guidelines
-   - Template sharing system
-   - Success story documentation
-
----
-
-## 📱 MOBILE & QUICK ACCESS
-
-### **Essential Quick References**
-- 🆘 **Emergency**: `ELITE MULTIMEDIA JOURNALISM SYSTEM v4.0.md` → Module 7
-- ✅ **Fact-Check**: `FACT-CHECKING.md` → SWIFT-VERIFY
-- 🎥 **Video**: `Sora Guide.md` or `Veo Guide.md` → Quick Start
-- 🖼️ **Images**: `DALL-E Guide.md` → Basic Generation
-- 🎙️ **Audio**: `Whisper Guide.md` + `Seed_VC Guide.md`
-
-### **Platform-Specific Access**
-- **Mobile Journalists**: Focus on Whisper + DALL-E + Emergency Protocols
-- **Newsroom Editors**: ELITE System + Fact-Checking + Video Tools
-- **Content Creators**: Documentary Framework + AI Tools Suite
-- **Technical Teams**: All guides with emphasis on integration workflows
-
----
-
-## 🎯 FUTURE ROADMAP
-
-### **Planned Additions**
-- [ ] **Real-time Collaboration Tools**
-- [ ] **Advanced Analytics Integration**
-- [ ] **Multi-language AI Model Guides**
-- [ ] **Virtual Reality Content Creation**
-- [ ] **Blockchain Verification Methods**
-
-### **Community Requests**
-- [ ] **Video Tutorial Integration**
-- [ ] **Sample Project Templates**
-- [ ] **Industry Case Studies**
-- [ ] **Regulatory Compliance Guides**
-
----
-
-**This index serves as the central navigation hub for the entire Journalist Knowledge Base, designed for scalability, maintainability, and professional multimedia journalism excellence.**
-
-*Last Index Update: 2025-01-04*  
-*Next Scheduled Review: 2025-02-04*
+  - ✅ **Technical Accuracy**: All AI tool guides reflect current capabilities.
+  - ✅ **Cultural Sensitivity**: Persian/Iranian context is maintained and respected.
+  - ✅ **Professional Standards**: Journalistic ethics and quality are upheld.
+  - ✅ **Accessibility**: Content is appropriate for various skill levels.
+  - ✅ **Integration**: Cross-document references and workflows are functional.
