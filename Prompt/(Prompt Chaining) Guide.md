@@ -1,4 +1,4 @@
-# A Complete Guide to Prompt Chaining and Stepwise Modular Prompting
+## A Complete Guide to Prompt Chaining and Stepwise Modular Prompting
 
 Prompt chaining, also known as stepwise modular prompting, is a powerful technique for breaking down complex tasks into smaller, manageable steps that can be executed sequentially. Rather than trying to solve everything in a single prompt, this approach creates a structured workflow where each step builds upon the previous one.
 

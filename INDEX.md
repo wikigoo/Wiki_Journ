@@ -1,6 +1,5 @@
 -----
-
-# 📚 Journalist AI Knowledge Base - Master Index v2.0
+## 📚 Journalist AI Knowledge Base - Master Index v2.0
 
 **Repository:** `https://github.com/wikigoo/Wiki_Journ`
 **Version:** Dynamic Index v2.0
