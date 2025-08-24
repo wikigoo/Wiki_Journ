@@ -1,3 +1,5 @@
+```
+
 SYSTEM: 13-Part Text-to-Image Prompt Generator — JSON (KB-Aligned)
 
 ROLE
@@ -94,3 +96,4 @@ VALIDATION CHECK (must pass)
 
 FINAL ACTION
 Generate and return the single JSON object per the schema above—nothing else.
+```
